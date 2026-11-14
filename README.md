@@ -1,1 +1,11 @@
-Guwei static website preview
+# 固威环保官网改版预览
+
+预览地址：https://aisharks.github.io/guwei-website-preview/
+
+本仓库仅含25个独立静态页面和公开展示素材，不包含后台、数据库、管理员账号或咨询记录。
+
+表单已停用，内容仍有待确认项目；本预览不代表正式上线验收。页面设为 noindex，非访问权限控制，链接与仓库均公开。
+
+本机后台更新不会自动同步到此仓库，需重新导出并推送 main 分支。GitHub Pages 发布来源为 main 分支根目录。
+
+图片及企业资料来自企业原有官网 https://www.gzgwhb.com/ 及项目提供资料，素材权利归原权利人。本仓库不授予第三方再使用许可。
