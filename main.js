@@ -90,7 +90,7 @@
     document.body.appendChild(preview);
     previewClose.addEventListener('click', closePreview);
     preview.addEventListener('click', function (event) {
-      if (event.target === preview) closePreview();
+      if (event.target === preview || event.target === panel) closePreview();
     });
     previewImage.onload = function () { previewStatus.textContent = ''; };
     previewImage.onerror = function () {
