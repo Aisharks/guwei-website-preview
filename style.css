@@ -25,4 +25,4 @@
 .hero h1{text-wrap:balance}
 .hero h1{word-break:keep-all;overflow-wrap:break-word}
 
-.preview_notice{padding:10px 20px;background:#e9eef2;color:#244253;text-align:center;font-size:13px;line-height:1.6;border-bottom:1px solid #cbd5de}.lead_form :disabled{cursor:not-allowed;opacity:.7}
+.lead_form :disabled{cursor:not-allowed;opacity:.7}
