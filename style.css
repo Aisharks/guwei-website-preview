@@ -97,6 +97,12 @@ a[data-image-link]{cursor:zoom-in}
 .image_lightbox_arrow:hover{background:#fff}
 .image_lightbox_arrow:focus-visible{outline:3px solid #f2bd88;outline-offset:3px}
 @media(max-width:760px){.image_lightbox_arrow{width:44px;height:48px;font-size:36px;background:rgba(16,45,67,.9);color:white;border-color:#778c9b}.image_lightbox_arrow:hover{background:#214f71}}
+
+/* Homepage navigation scrolls to sections; detail links keep their own pages. */
+html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
+[data-home-sections] .section,[data-home-sections] #inquiry{scroll-margin-top:0}
+.home_detail_link{display:inline-block;margin-top:24px;margin-right:24px;color:var(--blue)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @supports(height:100dvh){.image_lightbox_image{max-height:calc(100dvh - 180px)}}
 @media(max-width:760px){.image_lightbox{padding:12px;padding-top:max(12px,env(safe-area-inset-top));padding-bottom:max(12px,env(safe-area-inset-bottom))}.image_lightbox_image{margin:10px 0}.image_lightbox_caption{font-size:13px}}
 
