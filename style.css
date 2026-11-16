@@ -106,4 +106,27 @@ html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
 @supports(height:100dvh){.image_lightbox_image{max-height:calc(100dvh - 180px)}}
 @media(max-width:760px){.image_lightbox{padding:12px;padding-top:max(12px,env(safe-area-inset-top));padding-bottom:max(12px,env(safe-area-inset-bottom))}.image_lightbox_image{margin:10px 0}.image_lightbox_caption{font-size:13px}}
 
+/* APPROVED SOLUTION VISUAL FORMAT */
+.sv_page .sv_hero{padding:52px 0 46px;background:white;color:var(--ink)}
+.sv_page h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px}
+.sv_page .sv_eyebrow{font-size:12px;letter-spacing:1px;color:var(--muted);margin:0 0 10px}
+.sv_page .sv_lead{font-size:18px;color:var(--muted)}
+.sv_nav{border-block:1px solid var(--line);background:#fff}.sv_nav .wrap{display:flex;gap:36px;overflow-x:auto;white-space:nowrap;padding-block:14px;font-size:14px}
+.sv_page>section:not(.sv_hero){padding:45px 0;border-bottom:1px solid var(--line)}
+.sv_section_heading{margin-bottom:26px}.sv_section_heading h2{margin:0;font-size:28px}
+.sv_project_photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.sv_page .sv_photo{margin:0;position:relative;min-width:0;background:#e4ebee;border:1px solid #cbd7dd;aspect-ratio:4/3;overflow:hidden}
+.sv_photo a{display:block;width:100%;height:100%;cursor:zoom-in}.sv_photo img{display:block;width:100%;height:100%;object-fit:cover;max-height:none}
+.sv_project_photos .sv_photo{aspect-ratio:16/10}
+.sv_photo figcaption{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;color:#637987;pointer-events:none;font-size:15px}
+.sv_photo.has_photo figcaption{display:none}.sv_project_intro{font-size:17px;line-height:1.95;margin:24px 0 0;max-width:1000px}
+.sv_pending{color:#855b2d}.sv_tablewrap{overflow-x:auto;border:1px solid var(--line)}
+.sv_page table{font-size:14px}.sv_page th,.sv_page td{padding:17px 15px;min-width:125px}
+.sv_page thead th{color:var(--ink);background:#eef2f4;font-weight:600}.sv_page tr:last-child td{border:0}
+.sv_photo_strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:26px}
+.sv_conversation{background:#eef2f4;padding:30px 34px;margin-bottom:30px}.sv_conversation h3{font-size:23px;margin-bottom:16px}.sv_conversation p{margin:10px 0}.sv_conversation .sv_small{font-size:14px;color:var(--muted);margin-top:18px}
+.sv_contact_bar{display:flex;align-items:center;justify-content:space-between;gap:32px;background:var(--navy);color:white;padding:30px 34px}.sv_contact_bar h2{margin:0}.sv_contact_bar .sv_eyebrow{color:#b3c6d2}.sv_contact_details{font-size:14px}.sv_contact_details p{margin:7px 0}.sv_contact_details a{text-decoration:underline}
+.sv_form{margin:28px 0 44px}.sv_form .inquiry{margin:24px 0 0;padding:0}.sv_form .inquiry p{padding-top:0}
+@media(max-width:760px){.sv_page .sv_hero{padding:32px 0}.sv_page .sv_lead{font-size:16px}.sv_nav .wrap{gap:25px;font-size:13px}.sv_page>section:not(.sv_hero){padding:32px 0}.sv_section_heading{margin-bottom:20px}.sv_section_heading h2{font-size:23px}.sv_project_photos{grid-template-columns:1fr;gap:12px}.sv_project_intro{font-size:15px;margin-top:18px}.sv_photo_strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;overscroll-behavior-x:contain}.sv_photo_strip .sv_photo{flex:0 0 82%;scroll-snap-align:start}.sv_conversation{padding:22px}.sv_conversation h3{font-size:20px}.sv_conversation p{font-size:15px}.sv_contact_bar{display:block;padding:24px}.sv_contact_details{margin-top:18px}.sv_page th,.sv_page td{padding:13px;font-size:13px}}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
