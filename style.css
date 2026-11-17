@@ -252,4 +252,18 @@ html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
 .medical_description{display:block}
 @media(max-width:760px){#medical_process .cards,#medical_disinfection .cards{grid-template-columns:1fr;gap:16px;margin-top:22px}#medical_process .card,#medical_disinfection .card{padding:22px 24px}.medical_name{font-size:20px;margin-bottom:10px}}
 
+/* Industrial project galleries and design data. */
+
+.industrial_gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.industrial_photo{margin:0;background:#f4f6f7;border:1px solid #d3dfe5;min-width:0}
+.industrial_photo a{display:block;background:white;cursor:zoom-in}.industrial_photo img{display:block;width:100%;height:auto;aspect-ratio:8/5;object-fit:contain;background:white}
+.industrial_photo figcaption{padding:13px 18px;font-size:14px;line-height:1.7;color:var(--muted)}
+.industrial_stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:28px 0;background:var(--brand);color:white}
+.industrial_stats article{padding:25px 28px;border-right:1px solid #ffffff30}.industrial_stats article:last-child{border:0}.industrial_stats h3{font-size:23px;color:white;margin:0 0 6px}.industrial_stats p{font-size:14px;margin:0;color:#e1edf3}
+.industrial_notes{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px}.industrial_notes article{border-top:2px solid var(--brand);padding:20px 24px;background:#f4f6f7}.industrial_notes h3{margin:0 0 12px}.industrial_notes p{margin:0}
+.industrial_flow{list-style:none;padding:0;margin:28px 0;display:flex;gap:12px;flex-wrap:wrap;counter-reset:process}.industrial_flow li{flex:1 1 125px;padding:18px 14px;background:#f4f6f7;border-top:3px solid var(--brand);font-weight:700;counter-increment:process}.industrial_flow li:before{content:counter(process,decimal-leading-zero) ' /';display:block;color:var(--muted);font-size:12px;font-weight:400;margin-bottom:10px}
+.industrial_sludge{background:#f4f6f7;padding:24px 28px;margin:28px 0}.industrial_sludge h3{margin:0 0 12px}.industrial_sludge p{margin:0;line-height:2}
+.industrial_table_title{margin:32px 0 20px}.industrial_table{overflow-x:auto}.industrial_table table{min-width:700px;width:100%}.industrial_details{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:760px){.industrial_gallery,.industrial_notes,.industrial_stats{grid-template-columns:1fr;gap:16px}.industrial_stats{gap:0}.industrial_stats article{padding:20px 24px;border-right:0;border-bottom:1px solid #ffffff30}.industrial_stats h3{font-size:22px}.industrial_photo figcaption{padding:10px 14px;font-size:13px}.industrial_sludge{padding:20px}.industrial_notes article{padding:20px}.industrial_flow{gap:10px}.industrial_flow li{flex-basis:calc(50% - 10px);box-sizing:border-box}.industrial_table_title{font-size:20px}}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
