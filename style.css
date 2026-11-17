@@ -96,7 +96,7 @@ a[data-image-link]{cursor:zoom-in}
 .image_lightbox_next{right:0}
 .image_lightbox_arrow:hover{background:#fff}
 .image_lightbox_arrow:focus-visible{outline:3px solid #f2bd88;outline-offset:3px}
-@media(max-width:760px){.image_lightbox_arrow{width:44px;height:48px;font-size:36px;background:rgba(16,45,67,.9);color:white;border-color:#778c9b}.image_lightbox_arrow:hover{background:var(--brand)}}
+@media(max-width:760px){.image_lightbox_arrow{width:44px;height:48px;font-size:36px;background:var(--brand);color:white;border-color:rgba(255,255,255,.45)}.image_lightbox_arrow:hover{background:var(--brand)}}
 
 /* Homepage navigation scrolls to sections; detail links keep their own pages. */
 html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
