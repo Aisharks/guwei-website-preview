@@ -188,4 +188,39 @@ html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
 @media(max-width:700px){.brochure_cards,.brochure_gallery,.brochure_feature{grid-template-columns:1fr;gap:16px}.brochure_cards article{padding:20px}.brochure_feature .product_media img{height:400px}.brochure_process{grid-template-columns:repeat(2,minmax(0,1fr))}.brochure_table td,.brochure_table th{padding:12px}.brochure_intro{margin-bottom:20px}}
 @media(max-width:600px){.brochure_table table{min-width:0;table-layout:fixed}.brochure_table td,.brochure_table th{padding:12px 8px;font-size:12px;white-space:normal;overflow-wrap:anywhere}.brochure_table th:first-child{width:40%}}
 
+/* Homepage: engineering gallery, compact certificates and company profile. */
+.home_engineering_grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:28px}
+.home_photo{margin:0;min-width:0;border:1px solid var(--line);background:#fff}
+.home_photo a,.home_company_photo a,.home_certificate a{display:block;cursor:zoom-in}
+.home_photo img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff}
+.home_photo figcaption{display:flex;gap:12px;align-items:baseline;padding:16px 14px;font-size:14px;border-top:1px solid var(--line)}
+.home_photo figcaption>span:first-child{color:var(--accent);font-size:11px;letter-spacing:1px}
+.home_section_heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+.home_zoom_hint{font-size:12px;color:var(--muted)}
+.home_certificate_wall{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;padding:24px;background:var(--paper);border:1px solid var(--line)}
+.home_certificate{margin:0;min-width:0;text-align:center}
+.home_certificate a{padding:8px;background:#fff;border:1px solid #e5e8e9;transition:border-color .15s,box-shadow .15s}
+.home_certificate a:hover{border-color:var(--blue);box-shadow:0 3px 10px #102d4314}
+.home_certificate img{display:block;width:100%;height:auto;aspect-ratio:231/326;object-fit:contain}
+.home_about_feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:54px;align-items:center}
+.home_company_photo{margin:0;background:var(--paper);border:1px solid var(--line);padding:14px}
+.home_company_photo img{display:block;width:100%;height:auto;object-fit:contain}
+.home_about_copy h2{margin:10px 0 20px}
+.home_about_copy .home_about_lead{font-size:24px;line-height:1.5;color:var(--navy);font-weight:600;margin:0 0 18px}
+.home_about_copy>p{font-size:15px;color:var(--muted)}
+.home_company_facts{display:grid;grid-template-columns:1fr 1fr;margin:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;gap:24px}
+.home_company_facts>div+div{border-left:1px solid var(--line);padding-left:24px}
+.home_company_facts strong{display:block;font-size:25px;line-height:1.4;font-weight:600;color:var(--navy)}
+.home_company_facts span{display:block;font-size:12px;margin-top:7px;color:var(--muted)}
+.home_about_link{display:inline-flex;gap:50px;font-size:14px;border-bottom:1px solid var(--accent);padding-bottom:6px}
+.home_capabilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:38px;background:var(--navy);color:#fff}
+.home_capabilities article{padding:28px 30px;position:relative;min-width:0}
+.home_capabilities article+article{border-left:1px solid #ffffff30}
+.home_capability_number{display:block;font-size:12px;letter-spacing:2px;color:#adcadc;margin-bottom:14px}
+.home_capabilities h3{font-size:20px;margin:0 0 12px;color:#fff}
+.home_capabilities p{font-size:14px;margin:0;color:#d5e0e8}
+@media(max-width:1000px){.home_engineering_grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home_about_feature{gap:28px}.home_certificate_wall{gap:12px;padding:18px}.home_certificate a{padding:5px}}
+@media(max-width:760px){.home_section_heading{display:block}.home_zoom_hint{display:block;margin:-12px 0 20px}.home_certificate_wall{grid-template-columns:repeat(3,minmax(0,1fr));padding:14px;gap:12px}.home_about_feature{grid-template-columns:1fr;gap:24px}.home_about_copy{order:-1}.home_about_copy .home_about_lead{font-size:22px}.home_capabilities{grid-template-columns:1fr;margin-top:24px}.home_capabilities article{padding:24px;display:grid;grid-template-columns:28px 1fr;column-gap:14px}.home_capability_number{grid-column:1;grid-row:1/3;margin-top:5px}.home_capabilities h3,.home_capabilities p{grid-column:2}.home_capabilities article+article{border-left:0;border-top:1px solid #ffffff30}.home_engineering_grid{gap:14px}.home_photo figcaption{padding:12px 10px;font-size:12px;gap:8px}}
+@media(max-width:420px){.home_certificate_wall{grid-template-columns:repeat(2,minmax(0,1fr))}.home_company_facts strong{font-size:23px}}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
