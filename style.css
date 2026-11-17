@@ -230,8 +230,8 @@ html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
 @media(max-width:760px){.certificate_groups{gap:8px}}
 
 /* A single original spread preserves the continuous blue band and typography. */
-.certificate_spread{margin:0;min-width:0;background:#fff}
-.certificate_spread img{display:block;width:100%;height:auto;object-fit:contain;cursor:default}
+.certificate_spread{margin:0;min-width:0;background:#fff;overflow:hidden}
+.certificate_spread img{display:block;width:100%;height:auto;object-fit:contain;cursor:default;margin-top:-6.9008783%}
 .certificate_heading{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
