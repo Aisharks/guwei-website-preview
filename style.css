@@ -129,4 +129,15 @@ html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
 .sv_form{margin:28px 0 44px}.sv_form .inquiry{margin:24px 0 0;padding:0}.sv_form .inquiry p{padding-top:0}
 @media(max-width:760px){.sv_page .sv_hero{padding:32px 0}.sv_page .sv_lead{font-size:16px}.sv_nav .wrap{gap:25px;font-size:13px}.sv_page>section:not(.sv_hero){padding:32px 0}.sv_section_heading{margin-bottom:20px}.sv_section_heading h2{font-size:23px}.sv_project_photos{grid-template-columns:1fr;gap:12px}.sv_project_intro{font-size:15px;margin-top:18px}.sv_photo_strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;overscroll-behavior-x:contain}.sv_photo_strip .sv_photo{flex:0 0 82%;scroll-snap-align:start}.sv_conversation{padding:22px}.sv_conversation h3{font-size:20px}.sv_conversation p{font-size:15px}.sv_contact_bar{display:block;padding:24px}.sv_contact_details{margin-top:18px}.sv_page th,.sv_page td{padding:13px;font-size:13px}}
 
+/* Full, uncropped patent certificates, shared by home and detail pages. */
+.cards.patent_certificates{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.patent_certificates .patent_card{padding:20px;display:flex;flex-direction:column}
+.patent_certificates .photo{margin:0 0 20px;background:#fffcf4}
+.patent_certificates .photo a{display:block;cursor:zoom-in}
+.patent_certificates .photo img{display:block;width:100%;height:auto;max-height:none;min-height:0;object-fit:contain}
+.patent_certificates .patent_type{color:var(--accent);font-size:12px;letter-spacing:1px;margin:0 0 8px}
+.patent_certificates h3{font-size:18px;line-height:1.6;margin-bottom:12px}
+.patent_certificates .patent_number{font-size:13px;margin-top:auto;overflow-wrap:anywhere}
+@media(max-width:760px){.cards.patent_certificates{grid-template-columns:1fr;gap:20px}.patent_certificates .patent_card{padding:18px}}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
