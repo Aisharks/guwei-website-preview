@@ -242,4 +242,14 @@ html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
 /* Wenchang project: preserve complete equipment photos. */
 .wenchang_case_page .sv_project_photos .sv_photo{aspect-ratio:4/3}.wenchang_case_page .sv_photo,.wenchang_case_page .sv_photo img{background:#fff}.wenchang_case_page .sv_photo img{object-fit:contain}
 
+/* Hospital process and disinfection cards: typography only. */
+#medical_process .sv_project_intro{margin:0 0 28px;max-width:none}
+#medical_process .cards,#medical_disinfection .cards{gap:24px;align-items:stretch;margin-top:26px}
+#medical_disinfection .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+#medical_process .card,#medical_disinfection .card{padding:28px 30px;background:#f4f6f7;border-top:3px solid var(--brand)}
+#medical_process .card p,#medical_disinfection .card p{margin:0;font-size:15px;line-height:1.95;color:var(--muted)}
+.medical_name{display:block;font-size:21px;line-height:1.5;font-weight:700;color:var(--ink);margin-bottom:14px}
+.medical_description{display:block}
+@media(max-width:760px){#medical_process .cards,#medical_disinfection .cards{grid-template-columns:1fr;gap:16px;margin-top:22px}#medical_process .card,#medical_disinfection .card{padding:22px 24px}.medical_name{font-size:20px;margin-bottom:10px}}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
