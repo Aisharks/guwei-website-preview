@@ -132,12 +132,21 @@ html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
 /* Full, uncropped patent certificates, shared by home and detail pages. */
 .cards.patent_certificates{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .patent_certificates .patent_card{padding:20px;display:flex;flex-direction:column}
-.patent_certificates .photo{margin:0 0 20px;background:#fffcf4}
-.patent_certificates .photo a{display:block;cursor:zoom-in}
+.patent_certificates .photo{margin:0 0 18px;background:transparent;display:flex;justify-content:center}
+.patent_certificates .photo a{display:block;cursor:zoom-in;width:170px;max-width:100%;box-shadow:0 2px 8px rgba(16,45,67,.10)}
 .patent_certificates .photo img{display:block;width:100%;height:auto;max-height:none;min-height:0;object-fit:contain}
 .patent_certificates .patent_type{color:var(--accent);font-size:12px;letter-spacing:1px;margin:0 0 8px}
-.patent_certificates h3{font-size:18px;line-height:1.6;margin-bottom:12px}
+.patent_certificates h3{font-size:17px;line-height:1.6;margin-bottom:12px}
 .patent_certificates .patent_number{font-size:13px;margin-top:auto;overflow-wrap:anywhere}
-@media(max-width:760px){.cards.patent_certificates{grid-template-columns:1fr;gap:20px}.patent_certificates .patent_card{padding:18px}}
+@media(max-width:760px){
+.cards.patent_certificates{grid-template-columns:1fr;gap:12px}
+.patent_certificates .patent_card{padding:16px;display:grid;grid-template-columns:96px minmax(0,1fr);column-gap:16px;row-gap:6px;align-content:center}
+.patent_certificates .photo{grid-column:1;grid-row:1 / 4;margin:0;align-self:center}
+.patent_certificates .photo a{width:96px}
+.patent_certificates .patent_type{grid-column:2;margin:0;font-size:11px}
+.patent_certificates h3{grid-column:2;font-size:15px;line-height:1.6;margin:0}
+.patent_certificates .patent_number{grid-column:2;font-size:12px;margin:0;line-height:1.6}
+}
+@media(max-width:380px){.patent_certificates .patent_card{padding:12px;grid-template-columns:76px minmax(0,1fr);column-gap:12px}.patent_certificates .photo a{width:76px}}
 
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
