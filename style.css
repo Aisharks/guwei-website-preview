@@ -239,4 +239,7 @@ html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
 .hero_aside,.sample_hero_aside,.footer_cta{border-color:rgba(255,255,255,.28)}
 .hero_rule{background:rgba(255,255,255,.28)}
 
+/* Wenchang project: preserve complete equipment photos. */
+.wenchang_case_page .sv_project_photos .sv_photo{aspect-ratio:4/3}.wenchang_case_page .sv_photo,.wenchang_case_page .sv_photo img{background:#fff}.wenchang_case_page .sv_photo img{object-fit:contain}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
