@@ -394,12 +394,6 @@ main .home_partners{padding:48px 0 56px;border-top:1px solid var(--line);border-
 }
 
 /* Ten product groups and electrical equipment detail pages, 2026-11-18. */
-@media(min-width:1101px){
- main #products>.cards,main .product_index_cards{grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
- main :is(#products>.cards,.product_index_cards)>.card{padding:20px}
- main :is(#products>.cards,.product_index_cards) h3{font-size:18px;min-height:58px}
-}
-@media(min-width:601px) and (max-width:1100px){main #products>.cards,main .product_index_cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .electrical_feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
 .electrical_feature .product_media{margin:0}
 .electrical_feature .product_media img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;background:var(--paper);padding:16px}
@@ -409,5 +403,19 @@ main .home_partners{padding:48px 0 56px;border-top:1px solid var(--line);border-
 .electrical_advantages strong{color:var(--navy)}
 .electrical_product>.septic_support{margin-top:40px}
 @media(max-width:760px){.electrical_feature{grid-template-columns:minmax(0,1fr);gap:28px}.electrical_feature .product_media img{height:auto;max-height:460px;padding:12px}.electrical_feature .septic_advantage_panel{padding:22px}.electrical_product>.septic_support{margin-top:32px}}
+
+/* Keep eight products visible; reveal 09 and 10 on request. */
+.product_disclosure{margin-top:28px;padding:0;background:transparent;border:0}
+.product_disclosure>summary{display:flex;align-items:center;justify-content:center;gap:16px;padding:17px 24px;border:1px solid var(--line);color:var(--brand);cursor:pointer;list-style:none;font-size:15px;font-weight:600;background:#fff}
+.product_disclosure>summary::-webkit-details-marker{display:none}
+.product_disclosure>summary:after{content:"＋";font-size:20px;font-weight:400;line-height:1}
+.product_disclosure>summary:hover{background:var(--paper)}
+.product_disclosure .disclosure_count{font-size:12px;font-weight:400;color:var(--muted)}
+.product_disclosure .when_open{display:none}
+.product_disclosure[open] .when_closed{display:none}
+.product_disclosure[open] .when_open{display:inline}
+.product_disclosure[open]>summary:after{content:"−"}
+.product_disclosure>.cards{margin-top:24px}
+@media(max-width:600px){.product_disclosure>summary{gap:12px;padding:15px}.product_disclosure{margin-top:22px}}
 
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
