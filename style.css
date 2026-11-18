@@ -418,4 +418,23 @@ main .home_partners{padding:48px 0 56px;border-top:1px solid var(--line);border-
 .product_disclosure>.cards{margin-top:24px}
 @media(max-width:600px){.product_disclosure>summary{gap:12px;padding:15px}.product_disclosure{margin-top:22px}}
 
+/* Phone product grids: six visible cards, four inside the disclosure. */
+@media(max-width:600px){
+ main #products>.cards,main .product_index_cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px}
+ main :is(#products>.cards,.product_index_cards)>.card{padding:14px 12px}
+ main :is(#products>.cards,.product_index_cards) .product_thumb{height:124px;margin-bottom:16px}
+ main :is(#products>.cards,.product_index_cards) .number{margin-bottom:12px}
+ main :is(#products>.cards,.product_index_cards) h3{font-size:16px;line-height:1.55;margin-bottom:12px;min-height:50px}
+ main :is(#products>.cards,.product_index_cards) h3 a{line-height:inherit}
+ main :is(#products>.cards,.product_index_cards) p{font-size:12px;line-height:1.8;margin-bottom:0}
+}
+@media(max-width:360px){main :is(#products>.cards,.product_index_cards) .product_thumb{height:100px}main :is(#products>.cards,.product_index_cards)>.card{padding:12px 10px}main :is(#products>.cards,.product_index_cards) h3{font-size:15px}}
+
+@media(max-width:600px){
+ main :is(#products>.cards,.product_index_cards) h3{font-size:15px}
+ main :is(#products>.cards,.product_index_cards) h3 a{display:flex;align-items:flex-start;gap:4px}
+ main .card h3 .mobile_product_label{font:inherit;color:inherit;flex:1;min-width:0}
+ main .card h3 .mobile_product_arrow{flex:0 0 auto;font-size:13px;line-height:1.9}
+}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}

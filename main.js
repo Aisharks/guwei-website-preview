@@ -269,6 +269,42 @@
   document.addEventListener('focusin', function (event) {
     if (preview && !preview.hidden && !preview.contains(event.target)) previewClose.focus();
   });
+  // Move the existing cards at the phone breakpoint; never duplicate products.
+  Array.prototype.forEach.call(document.querySelectorAll('.product_disclosure'), function (disclosure) {
+    var primaryGrid = disclosure.previousElementSibling;
+    var extraGrid = disclosure.querySelector('.cards');
+    if (!primaryGrid || !primaryGrid.classList.contains('cards') || !extraGrid) return;
+    var phoneExtra = Array.prototype.slice.call(primaryGrid.children, 6);
+    var desktopExtra = extraGrid.firstElementChild;
+    var titles = Array.prototype.slice.call(disclosure.parentElement.querySelectorAll('.card h3 a')).map(function (anchor) {
+      return { anchor: anchor, text: anchor.textContent };
+    });
+    var mobileProductQuery = window.matchMedia('(max-width: 600px)');
+    function syncProductCards() {
+      titles.forEach(function (entry) {
+        entry.anchor.textContent = entry.text;
+        if (mobileProductQuery.matches) {
+          var label = document.createElement('span');
+          label.className = 'mobile_product_label';
+          label.textContent = entry.text.replace(/\s*↗\s*$/, '');
+          var arrow = document.createElement('span');
+          arrow.className = 'mobile_product_arrow';
+          arrow.setAttribute('aria-hidden', 'true');
+          arrow.textContent = '↗';
+          entry.anchor.textContent = '';
+          entry.anchor.appendChild(label);
+          entry.anchor.appendChild(arrow);
+        }
+      });
+      phoneExtra.forEach(function (card) {
+        if (mobileProductQuery.matches) extraGrid.insertBefore(card, desktopExtra);
+        else primaryGrid.appendChild(card);
+      });
+    }
+    syncProductCards();
+    mobileProductQuery.addEventListener('change', syncProductCards);
+  });
+
   Array.prototype.forEach.call(document.querySelectorAll('.lead_form'), function (form) {
     form.addEventListener('submit', function (event) { event.preventDefault(); });
   });
