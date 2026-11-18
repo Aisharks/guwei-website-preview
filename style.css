@@ -393,4 +393,21 @@ main .home_partners{padding:48px 0 56px;border-top:1px solid var(--line);border-
  :is(#new_product_pe,#new_product_pump,#new_product_container) .septic_support{margin-top:24px;gap:18px}
 }
 
+/* Ten product groups and electrical equipment detail pages, 2026-11-18. */
+@media(min-width:1101px){
+ main #products>.cards,main .product_index_cards{grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+ main :is(#products>.cards,.product_index_cards)>.card{padding:20px}
+ main :is(#products>.cards,.product_index_cards) h3{font-size:18px;min-height:58px}
+}
+@media(min-width:601px) and (max-width:1100px){main #products>.cards,main .product_index_cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.electrical_feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.electrical_feature .product_media{margin:0}
+.electrical_feature .product_media img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;background:var(--paper);padding:16px}
+.electrical_advantages{list-style:none;margin:0;padding:0}
+.electrical_advantages li{padding:17px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.9}
+.electrical_advantages li:last-child{border:0;padding-bottom:0}
+.electrical_advantages strong{color:var(--navy)}
+.electrical_product>.septic_support{margin-top:40px}
+@media(max-width:760px){.electrical_feature{grid-template-columns:minmax(0,1fr);gap:28px}.electrical_feature .product_media img{height:auto;max-height:460px;padding:12px}.electrical_feature .septic_advantage_panel{padding:22px}.electrical_product>.septic_support{margin-top:32px}}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
