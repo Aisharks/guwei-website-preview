@@ -376,7 +376,7 @@ main .home_partners{padding:48px 0 56px;border-top:1px solid var(--line);border-
 }
 
 /* PE product details: clear advantages beside the product reference image. */
-:is(#new_product_pe,#new_product_pump)>.brochure_intro{max-width:1020px;margin-bottom:30px;line-height:1.95}
+:is(#new_product_pe,#new_product_pump,#new_product_container)>.brochure_intro{max-width:1020px;margin-bottom:30px;line-height:1.95}
 .septic_advantage_panel{padding:28px 30px;background:var(--paper);border-top:3px solid var(--brand)}
 .septic_advantage_panel h3{margin:0 0 10px;color:var(--brand)}
 .septic_advantages{margin:0;padding:0;list-style:none}
@@ -384,13 +384,13 @@ main .home_partners{padding:48px 0 56px;border-top:1px solid var(--line);border-
 .septic_advantages li:last-child{border-bottom:0;padding-bottom:0}
 .septic_advantages li:before{content:'✓';position:absolute;left:0;color:var(--brand);font-weight:700}
 .septic_advantages strong{color:var(--ink);font-weight:700}
-:is(#new_product_pe,#new_product_pump) .septic_support{margin-top:32px;gap:24px}
+:is(#new_product_pe,#new_product_pump,#new_product_container) .septic_support{margin-top:32px;gap:24px}
 .septic_support h3{color:var(--brand)}
 @media(max-width:700px){
- :is(#new_product_pe,#new_product_pump)>.brochure_intro{margin-bottom:24px;font-size:15px}
+ :is(#new_product_pe,#new_product_pump,#new_product_container)>.brochure_intro{margin-bottom:24px;font-size:15px}
  .septic_advantage_panel{padding:22px}
  .septic_advantages li{padding-top:15px;padding-bottom:15px;padding-left:24px;font-size:14px}
- :is(#new_product_pe,#new_product_pump) .septic_support{margin-top:24px;gap:18px}
+ :is(#new_product_pe,#new_product_pump,#new_product_container) .septic_support{margin-top:24px;gap:18px}
 }
 
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
