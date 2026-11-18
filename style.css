@@ -266,6 +266,15 @@ html{scroll-behavior:smooth;scroll-padding-top:var(--anchor-offset,110px)}
 .industrial_table_title{margin:32px 0 20px}.industrial_table{overflow-x:auto}.industrial_table table{min-width:700px;width:100%}.industrial_details{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:760px){.industrial_gallery,.industrial_notes,.industrial_stats{grid-template-columns:1fr;gap:16px}.industrial_stats{gap:0}.industrial_stats article{padding:20px 24px;border-right:0;border-bottom:1px solid #ffffff30}.industrial_stats h3{font-size:22px}.industrial_photo figcaption{padding:10px 14px;font-size:13px}.industrial_sludge{padding:20px}.industrial_notes article{padding:20px}.industrial_flow{gap:10px}.industrial_flow li{flex-basis:calc(50% - 10px);box-sizing:border-box}.industrial_table_title{font-size:20px}}
 
+/* Keep product features and application photos in distinct, spacious groups. */
+#new_product_container>.brochure_feature{gap:32px 40px}
+#new_product_container>.brochure_feature>.brochure_cards{gap:20px}
+#new_product_container>h3{margin:48px 0 24px;padding-top:32px;border-top:1px solid var(--line);font-size:23px;line-height:1.5}
+#new_product_container>.product_media_grid{gap:24px}
+#new_product_container>.product_media_grid+p{margin:26px 0 0;max-width:980px;color:var(--muted);font-size:15px;line-height:1.9}
+#new_product_container .product_media figcaption{padding:16px 20px;line-height:1.7}
+@media(max-width:700px){#new_product_container>.brochure_feature{gap:24px}#new_product_container>h3{margin-top:32px;padding-top:24px;margin-bottom:20px;font-size:21px}#new_product_container>.product_media_grid{gap:20px}#new_product_container>.product_media_grid+p{margin-top:22px}#new_product_container .product_media figcaption{padding:14px 16px}}
+
 /* Building services project: portrait installation photography. */
 .building_portrait_gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .building_portrait_gallery .industrial_photo img,.building_portrait .industrial_photo img{aspect-ratio:3/4}
