@@ -437,4 +437,12 @@ main .home_partners{padding:48px 0 56px;border-top:1px solid var(--line);border-
  main .card h3 .mobile_product_arrow{flex:0 0 auto;font-size:13px;line-height:1.9}
 }
 
+/* Wide tablet navigation: keep links visible and aligned right. */
+@media(min-width:900px) and (max-width:1150px){
+ header .header_inner{flex-wrap:nowrap;min-height:92px}
+ header .menu_toggle{display:none}
+ header nav,html.js header nav,html.js header nav.is_open{display:flex;width:auto;flex-wrap:nowrap;gap:18px;padding:0;margin-left:auto;font-size:13px}
+ main{padding-top:92px}
+}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
