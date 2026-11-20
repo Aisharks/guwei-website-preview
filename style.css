@@ -505,4 +505,14 @@ main #products .product_disclosure>.cards{margin-top:24px}
 @media(prefers-reduced-motion:reduce){main #products .card .product_thumb{transition:none}}
 main #products{border-bottom:0}
 
+/* Tighten the two homepage transitions without changing inner card spacing. */
+main #solutions{padding-bottom:30px}
+main #products{padding-top:30px;padding-bottom:30px}
+main #engineering_images{padding-top:30px}
+@media(max-width:760px){
+ main #solutions{padding-bottom:22px}
+ main #products{padding-top:22px;padding-bottom:22px}
+ main #engineering_images{padding-top:22px}
+}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
