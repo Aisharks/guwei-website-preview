@@ -277,12 +277,12 @@
     var phoneExtra = Array.prototype.slice.call(primaryGrid.children, 6);
     var desktopExtra = extraGrid.firstElementChild;
     var titles = Array.prototype.slice.call(disclosure.parentElement.querySelectorAll('.card h3 a')).map(function (anchor) {
-      return { anchor: anchor, text: anchor.textContent };
+      return { anchor: anchor, text: anchor.textContent, html: anchor.innerHTML };
     });
     var mobileProductQuery = window.matchMedia('(max-width: 600px)');
     function syncProductCards() {
       titles.forEach(function (entry) {
-        entry.anchor.textContent = entry.text;
+        entry.anchor.innerHTML = entry.html;
         if (mobileProductQuery.matches) {
           var label = document.createElement('span');
           label.className = 'mobile_product_label';

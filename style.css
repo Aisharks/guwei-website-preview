@@ -474,4 +474,35 @@ main #solutions .card:has(a:focus-visible){outline:2px solid var(--brand);outlin
 main #solutions>.cards>.card:last-child{border-bottom:0}
 @media(min-width:761px){main #solutions>.cards>.card:nth-last-child(2):nth-child(odd){border-bottom:0}}
 
+
+/* Homepage product collection: consistent 4:3 photography and flat editorial cards. */
+main #products>.cards,main #products .product_index_cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:32px 24px}
+main #products .cards>.card{padding:0 0 22px;background:transparent;border:0;border-bottom:1px solid var(--line);min-width:0}
+main #products .product_cover_link{overflow:hidden;background:#f3f5f6;line-height:0}
+main #products .card .product_thumb{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;margin:0;background:transparent;transition:transform .25s ease}
+main #products .card .number{margin:18px 0 9px;color:var(--brand);font-size:11px;line-height:1.4;letter-spacing:.1em;font-variant-numeric:tabular-nums}
+main #products .card h3{font-size:18px;font-weight:600;line-height:1.55;margin:0 0 10px;min-height:28px}
+main #products .card h3 a{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;line-height:inherit;text-decoration:none}
+main #products .card h3 a span{flex:0 0 auto;font-size:16px;line-height:1.75;color:#708392}
+main #products .card p{margin:0;font-size:13px;line-height:1.85;min-height:48px;color:var(--muted)}
+main #products .card:hover h3,main #products .card:focus-within h3{color:var(--brand)}
+@media(hover:hover){main #products .product_cover_link:hover .product_thumb{transform:scale(1.025)}}
+main #products .product_disclosure{margin-top:24px}
+main #products .product_disclosure>summary{padding:16px 0;background:transparent;border:0;border-bottom:1px solid var(--line);gap:12px;font-size:14px}
+main #products .product_disclosure>summary:hover{color:var(--navy)}
+main #products .product_disclosure>.cards{margin-top:24px}
+@media(max-width:900px) and (min-width:761px){main #products .card h3{font-size:16px;min-height:50px}main #products>.cards,main #products .product_index_cards{column-gap:20px}}
+@media(max-width:760px){
+ main #products>.cards,main #products .product_index_cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 16px}
+ main #products .cards>.card{padding:0 0 18px}
+ main #products .card .number{margin:13px 0 8px}
+ main #products .card h3{font-size:15px;line-height:1.55;min-height:47px;margin-bottom:8px}
+ main #products .card h3 a{gap:5px}
+ main #products .card h3 a .mobile_product_label{flex:1 1 auto;min-width:0;font:inherit;color:inherit}
+ main #products .card h3 a .mobile_product_arrow{flex:0 0 auto;font-size:13px;line-height:1.85}
+ main #products .card p{font-size:12px;line-height:1.8;min-height:44px}
+}
+@media(prefers-reduced-motion:reduce){main #products .card .product_thumb{transition:none}}
+main #products{border-bottom:0}
+
 .lead_form :disabled{cursor:not-allowed;opacity:.7}
