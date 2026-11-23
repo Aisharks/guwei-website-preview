@@ -36,3 +36,13 @@
  .engineering{padding-top:30px}
  .products-section{padding-bottom:30px}
 }
+
+/* Service proposition — 2026-11-23 */
+.hero-services{display:flex;align-items:center;flex-wrap:wrap;gap:0;letter-spacing:.06em;line-height:1.5;margin-top:30px}
+.hero-services>span{display:block;white-space:nowrap;padding-inline:22px;border-left:1px solid #ffffff66}
+.hero-services>span:first-child{padding-left:0;border-left:0}
+@media(max-width:760px){
+ .hero-services{display:grid;grid-template-columns:max-content max-content;gap:14px 0;font-size:15px;margin-top:24px}
+ .hero-services>span{padding-inline:18px}
+ .hero-services>span:nth-child(odd){padding-left:0;border-left:0}
+}
