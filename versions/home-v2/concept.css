@@ -124,3 +124,13 @@
 
 /* Cases follow the capability band directly — 2026-11-23 */
 #solutions{padding-top:0}
+
+/* Ten selected products, five per desktop row — 2026-11-23 */
+.product-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:32px 24px}
+.product-copy h3{font-size:18px;min-height:0}
+.product-copy p{min-height:78px}
+.product-photo-pending{display:flex;align-items:center;justify-content:center;background:#e9efeb;color:#71857a;border:1px solid #d5dfd7;font-size:14px;letter-spacing:.08em}
+@media(max-width:1100px) and (min-width:761px){.product-grid{gap:28px 16px}.product-copy h3{font-size:16px}.product-copy p{font-size:13px}}
+@media(max-width:760px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 16px}.product-copy h3{font-size:15px;min-height:0}.product-copy p{min-height:66px}}
+@media(max-width:360px){.product-grid{gap:22px 12px}.product-copy h3{font-size:14px}.product-photo-pending{font-size:12px}}
+.product-photo img[src$="purification-equipment.jpg"]{transform:scale(1.05)}
