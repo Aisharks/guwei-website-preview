@@ -1,0 +1,42 @@
+Guwei Environmental | Wastewater Equipment Selection Checklist
+Version: 2026-11-15
+
+Purpose: Prepare for an initial technical discussion. This is not an equipment specification, quotation or design conclusion.
+Complete known information only. Mark missing information as 待确认; do not estimate unknown values without supporting data.
+This file is completed locally and is not submitted automatically. Share it through a contact channel agreed by both parties.
+
+1. Project overview
+Project location:
+Project stage (initial assessment / design / procurement / retrofit / other):
+Wastewater sources and production or operating conditions:
+New installation or retrofit; existing facilities:
+
+2. Flow and operating periods
+Average daily flow (m³/d) and basis of measurement:
+Peak flow or concentrated discharge periods:
+Daily discharge hours and seasonal variations:
+Available water consumption, discharge or production records:
+
+3. Water quality and treatment objectives
+Test report title, date, sampling location and production conditions:
+Known parameters and units (e.g. COD, BOD₅, SS, ammonia nitrogen):
+Oil, solid debris or other constituents requiring attention:
+Discharge or reuse destination:
+Confirmed target parameters, sewer acceptance requirements and project documents:
+Open questions requiring further verification:
+
+4. Site and operations
+Available site dimensions and layout drawing:
+Pipe elevations, connections and power supply:
+Transport, lifting and maintenance access:
+Staffing and maintenance arrangements:
+Integration with existing control or monitoring systems:
+Shutdown windows and other construction restrictions:
+
+5. Supply and delivery scope
+Scope to discuss (equipment / installation and commissioning / supporting construction / controls / other):
+Required schedule and drawings:
+Ask the supplier to clarify model and operating conditions, configuration, dimensions and materials, power and operating assumptions, connections, delivery documents, installation and commissioning responsibilities, and quotation exclusions.
+
+Suggested attachments: test reports, site or equipment photos, layout drawings, water consumption and discharge records, and confirmed treatment requirements.
+Note: Missing data requires additional testing or technical verification. Average daily flow or product photographs alone cannot determine the final equipment selection.

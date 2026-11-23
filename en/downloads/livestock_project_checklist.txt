@@ -1,0 +1,53 @@
+Guwei Environmental | Livestock and Slaughterhouse Wastewater Checklist
+Version: 2026-11-15
+
+Purpose: Prepare project information and a consistent basis for cost comparisons. This is not a process design, quotation or operating cost commitment.
+Complete known information only. Mark unknown items as 待确认. Contact details are not required to use this checklist.
+This file is not submitted automatically. Share the completed information through a contact channel agreed by both parties.
+
+1. Identify the project type
+Type: livestock farming / slaughterhouse / meat processing / other
+Location and current stage:
+New installation or retrofit; main issues:
+
+For livestock projects:
+Livestock type and scale:
+Manure removal, wash water and existing solid-liquid separation:
+Manure treatment or reuse destination and available supporting facilities:
+
+For slaughterhouse and processing projects:
+Production type, scale, shifts and cleaning periods:
+Collection of blood-bearing water, fats and solid debris:
+Existing screening, grease separation, equalization or other pretreatment:
+
+2. Influent and treatment requirements
+Average daily flow, measurement basis and reporting period:
+Peak or concentrated discharge periods:
+Test report, sampling time, location and production conditions:
+Known COD, BOD₅, SS, ammonia nitrogen, animal and vegetable oil values (include units):
+Final discharge or reuse destination and confirmed treatment requirements:
+
+3. Site conditions
+Site dimensions, connection elevations, power and maintenance access:
+Existing equipment, structures and facilities available for reuse:
+Production continuity requirements, shutdown windows and construction restrictions:
+Staffing, testing and maintenance arrangements:
+
+4. Prepare a comparable cost basis
+Use the same reporting period, influent conditions and actual volume treated.
+Electricity: consumption records or operating assumptions; tariff; actual load and operating hours.
+Chemicals and consumables: test or operating consumption; purchase prices; replacement intervals.
+Sludge and other residuals: quantities, moisture content, transport and disposal quotations, and scope included.
+Labor, testing and maintenance: staffing, frequency, maintenance plan and included costs.
+State whether equipment purchase, civil works and depreciation are excluded or accounted for separately.
+Calculate unit treatment cost using agreed costs and actual volume treated within the same period. Figures expressed per tonne are not comparable unless their scope and basis match.
+
+5. Technical and delivery information to request
+Design basis, process description, equipment list, operating conditions, operating cost assumptions, supply boundaries, installation and commissioning responsibilities, exclusions and follow-up verification documents.
+
+6. Check reference projects
+Are project type and scale comparable?
+Are the contract scope, influent conditions and treatment objectives clear?
+Are relevant acceptance, test, operating and cost records available?
+
+Note: This checklist supports initial discussions. Project technical staff must confirm the final solution against actual site conditions.
