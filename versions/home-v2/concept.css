@@ -85,3 +85,16 @@
 .service-sector::after{content:"";position:absolute;inset:32% 0 0;background:linear-gradient(180deg,transparent 0%,rgba(5,29,25,.22) 44%,rgba(5,29,25,.8) 100%);pointer-events:none;z-index:1}
 .service-sector figcaption{position:absolute;bottom:0;left:0;right:0;padding:18px 16px;color:#fff;text-align:left;font-size:18px;font-weight:600;letter-spacing:.08em;z-index:2;text-shadow:0 1px 5px #071f2433}
 @media(max-width:600px){.service-sector figcaption{font-size:16px;padding:12px;letter-spacing:.04em}}
+
+/* Six services in two aligned rows — 2026-11-23 */
+.hero-services{display:grid;grid-template-columns:repeat(3,max-content);gap:18px 0;width:max-content;max-width:100%}
+.hero-services>span,.hero-services>span:nth-child(odd){padding-inline:22px;border-left:1px solid #ffffff66}
+.hero-services>span:nth-child(3n+1){padding-left:0;border-left:0}
+.hero-services>span:nth-child(3n){padding-right:0}
+@media(max-width:760px){
+ .hero-services{grid-template-columns:repeat(3,max-content);gap:14px 0;font-size:15px}
+ .hero-services>span,.hero-services>span:nth-child(odd){padding-inline:14px;border-left:1px solid #ffffff66}
+ .hero-services>span:nth-child(3n+1){padding-left:0;border-left:0}
+ .hero-services>span:nth-child(3n){padding-right:0}
+}
+@media(max-width:360px){.hero-services{font-size:14px}.hero-services>span,.hero-services>span:nth-child(odd){padding-inline:10px}.hero-services>span:nth-child(3n+1){padding-left:0}.hero-services>span:nth-child(3n){padding-right:0}}
