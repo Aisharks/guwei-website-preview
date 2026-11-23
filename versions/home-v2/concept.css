@@ -135,10 +135,10 @@
 @media(max-width:360px){.product-grid{gap:22px 12px}.product-copy h3{font-size:14px}.product-photo-pending{font-size:12px}}
 .product-photo img[src$="purification-equipment.jpg"]{transform:scale(1.05)}
 
-/* Seven image-led honeycomb cases, 2–3–2 — 2026-11-23 */
+/* Rectangular image cards, centered 2–3–2 rows — 2026-11-23 */
 #solutions{padding-top:28px;padding-bottom:48px}
-.case-list{grid-template-columns:repeat(6,minmax(0,1fr));gap:0 18px;max-width:1160px;margin-inline:auto}
-.case-row{position:relative;display:block;grid-column:span 2;min-width:0;aspect-ratio:.866;min-height:410px;background:#153d35;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);isolation:isolate}
+.case-list{grid-template-columns:repeat(6,minmax(0,1fr));gap:20px;max-width:1160px;margin-inline:auto}
+.case-row{position:relative;display:block;grid-column:span 2;min-width:0;width:100%;aspect-ratio:4/3;min-height:320px;background:#153d35;overflow:hidden;isolation:isolate}
 .case-row:nth-child(1){grid-column:2/span 2;grid-row:1}
 .case-row:nth-child(2){grid-column:4/span 2;grid-row:1}
 .case-row:nth-child(3){grid-column:1/span 2;grid-row:2}
@@ -146,26 +146,24 @@
 .case-row:nth-child(5){grid-column:5/span 2;grid-row:2}
 .case-row:nth-child(6){grid-column:2/span 2;grid-row:3}
 .case-row:nth-child(7){grid-column:4/span 2;grid-row:3}
-.case-row:nth-child(n+3){margin-top:-70px}
 .case-row .case-photo{position:absolute;inset:0;aspect-ratio:auto;overflow:hidden;z-index:-2}
 .case-row .case-photo::before{display:none}
 .case-row .case-photo img{object-fit:cover;transition:transform .45s ease}
-.case-row::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,30,26,.12),rgba(6,30,26,.78) 35%,rgba(6,30,26,.86) 70%,rgba(6,30,26,.4))}
-.case-row .solution-copy{position:absolute;inset:0;padding:0 34px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white}
+.case-row::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,30,26,.38),rgba(6,30,26,.76) 40%,rgba(6,30,26,.82))}
+.case-row .solution-copy{position:absolute;inset:0;padding:26px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:white}
 .case-row .solution-copy h3{font-size:21px;line-height:1.5;color:white;margin:0 0 12px;max-width:100%;text-wrap:balance}
 .case-row .solution-description{color:#edf5ef;font-size:13px;line-height:1.85;max-width:100%;margin:0}
 .case-row .solution-link{margin-top:19px;min-width:110px;min-height:40px;padding:9px 20px;font-size:13px;background:#ffffff14;border:1px solid #ffffff99;color:#fff}
 .case-row .solution-link:hover,.case-row .solution-link:focus-visible{background:#fff;color:var(--ink)}
 .case-row:hover .case-photo img{transform:scale(1.035)}
 .case-row:focus-within::after{background:#0a302acc}
-@media(min-width:901px) and (max-width:1100px){.case-list{gap:0 12px}.case-row{min-height:410px}.case-row .solution-copy{padding-inline:25px}.case-row .solution-copy h3{font-size:19px}.case-row .solution-description{font-size:12px}}
+@media(min-width:901px) and (max-width:1100px){.case-list{gap:16px}.case-row .solution-copy{padding:22px}.case-row .solution-copy h3{font-size:19px}.case-row .solution-description{font-size:13px}}
 @media(max-width:900px){
  #solutions{padding-top:20px;padding-bottom:30px}
  .case-list{grid-template-columns:minmax(0,1fr);gap:18px;max-width:440px}
- .case-list .case-row:nth-child(n){grid-column:1;grid-row:auto;margin-top:0;min-height:420px}
- .case-row .solution-copy{padding-inline:38px}
+ .case-list .case-row:nth-child(n){grid-column:1;grid-row:auto;min-height:320px}
+ .case-row .solution-copy{padding:24px}
  .case-row .solution-copy h3{font-size:22px}
  .case-row .solution-description{font-size:14px}
 }
-@media(max-width:380px){.case-row .solution-copy{padding-inline:24px}.case-row .solution-copy h3{font-size:19px}.case-row .solution-description{font-size:13px}}
-.case-list .case-row{width:100%}
+@media(max-width:380px){.case-row .solution-copy{padding:20px}.case-row .solution-copy h3{font-size:19px}.case-row .solution-description{font-size:13px}}
