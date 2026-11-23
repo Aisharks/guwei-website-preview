@@ -121,3 +121,6 @@
 }
 
 .case-photo{aspect-ratio:auto}.case-photo::before{content:'';display:block;padding-top:75%}.case-photo img{position:absolute;inset:0}
+
+/* Cases follow the capability band directly — 2026-11-23 */
+#solutions{padding-top:0}
