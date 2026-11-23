@@ -9,11 +9,6 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
 const navigation=[...document.querySelectorAll('#navigation a')];
 const observed=navigation.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
 if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){navigation.forEach(a=>{const active=a.hash==='#'+entry.target.id;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}}},{rootMargin:'-15% 0px -60% 0px',threshold:0});observed.forEach(el=>observer.observe(el))}
-const solutionData=JSON.parse(document.querySelector('#solution-data').textContent);
-const tabs=[...document.querySelectorAll('[data-solution]')];
-const panel=document.querySelector('#solution-panel');
-function chooseSolution(index){const d=solutionData[index];tabs.forEach((t,i)=>{t.setAttribute('aria-selected',String(i===index));t.tabIndex=i===index?0:-1});panel.setAttribute('aria-labelledby',tabs[index].id);const image=panel.querySelector('img');image.src=d.image;image.alt=d.alt;panel.querySelector('h3').textContent=d.title+'解决方案';panel.querySelector('h4').textContent=d.headline;panel.querySelector('.solution-description').textContent=d.description;panel.querySelector('.solution-tags').replaceChildren(...d.tags.map(tag=>{const li=document.createElement('li');li.textContent=tag;return li}));panel.querySelector('.solution-link').href=d.href;panel.classList.remove('switched');requestAnimationFrame(()=>panel.classList.add('switched'))}
-tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>chooseSolution(index));tab.addEventListener('keydown',e=>{let next=index;if(e.key==='ArrowRight')next=(index+1)%tabs.length;else if(e.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=tabs.length-1;else return;e.preventDefault();chooseSolution(next);tabs[next].focus();tabs[next].scrollIntoView({block:'nearest',inline:'nearest'})})});
 const primary=document.querySelector('#primary-products'),extra=document.querySelector('#extra-products');
 const allProducts=[...document.querySelectorAll('[data-product]')].sort((a,b)=>Number(a.dataset.product)-Number(b.dataset.product));
 const mobile=window.matchMedia('(max-width:760px)');

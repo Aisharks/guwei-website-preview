@@ -98,3 +98,26 @@
  .hero-services>span:nth-child(3n){padding-right:0}
 }
 @media(max-width:360px){.hero-services{font-size:14px}.hero-services>span,.hero-services>span:nth-child(odd){padding-inline:10px}.hero-services>span:nth-child(3n+1){padding-left:0}.hero-services>span:nth-child(3n){padding-right:0}}
+
+/* All seven project categories, alternating image and copy — 2026-11-23 */
+.case-list{display:grid;gap:20px}
+.case-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));background:var(--pale)}
+.case-photo{position:relative;min-width:0;aspect-ratio:4/3;overflow:hidden}
+.case-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.case-row:nth-child(even) .case-photo{grid-column:2;grid-row:1}
+.case-row:nth-child(even) .solution-copy{grid-column:1;grid-row:1}
+.case-row .solution-copy{min-width:0;padding:clamp(26px,3.5vw,56px);align-self:stretch}
+.case-row .solution-copy h3{color:var(--green);font-size:clamp(22px,2vw,28px);margin-bottom:20px}
+.case-row .solution-description{font-size:15px;line-height:1.95}
+.case-row .solution-link{margin-top:26px;min-width:130px}
+@media(max-width:760px){
+ .case-list{gap:24px}
+ .case-row{grid-template-columns:minmax(0,1fr)}
+ .case-row:nth-child(even) .case-photo,.case-row:nth-child(even) .solution-copy{grid-column:auto;grid-row:auto}
+ .case-row .solution-copy{padding:25px 23px 28px}
+ .case-row .solution-copy h3{font-size:22px;margin-bottom:13px}
+ .case-row .solution-description{font-size:14px;line-height:1.9}
+ .case-row .solution-link{margin-top:20px;min-width:120px}
+}
+
+.case-photo{aspect-ratio:auto}.case-photo::before{content:'';display:block;padding-top:75%}.case-photo img{position:absolute;inset:0}
