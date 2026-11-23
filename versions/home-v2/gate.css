@@ -1,0 +1,26 @@
+
+.gate-page .site-header{background:white;color:var(--ink);border-color:var(--line)}
+.gate-page .site-header nav a::after{background:var(--green)}
+.gate-page .header-phone{border-color:var(--line)}
+.gate-hero{margin-top:90px;padding:64px 0;background:var(--navy);color:white}
+.gate-hero h1{font-size:48px;line-height:1.4;margin-bottom:20px}
+.gate-hero p:not(.eyebrow){max-width:760px;line-height:1.9;color:#e1ece6}
+.gate-hero .hero-actions{margin-top:28px}
+.gate-section{padding:54px 0;border-bottom:1px solid var(--line)}
+.gate-type{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:30px}
+.gate-type+.gate-type{padding-top:44px;margin-top:44px;border-top:1px solid var(--line)}
+.gate-photo{background:var(--pale);padding:0;border:0;display:block;width:100%;cursor:zoom-in}
+.gate-photo img{height:480px;object-fit:contain}
+.gate-type h3{font-size:27px;line-height:1.5;margin-bottom:18px;color:var(--green)}
+.gate-type p{color:var(--muted);font-size:15px;line-height:1.95}
+.gate-type dl{margin:22px 0 0;display:grid;gap:14px}
+.gate-type dt{font-size:14px;font-weight:600;color:var(--ink)}
+.gate-type dd{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.gate-specs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px}
+.gate-specs article{background:var(--pale);padding:26px}
+.gate-specs h3{font-size:19px;margin-bottom:13px}.gate-specs p{font-size:14px;color:var(--muted);line-height:1.9}
+.gate-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px}
+.gate-gallery .gate-photo img{height:360px}.gate-gallery figcaption{font-size:14px;padding:14px 0;color:var(--muted)}
+.gate-note{font-size:14px;color:var(--muted);margin-top:22px;line-height:1.9}
+@media(max-width:950px){.gate-type{gap:28px}.gate-type h3{font-size:23px}.gate-photo img{height:420px}.gate-gallery .gate-photo img{height:290px}}
+@media(max-width:760px){.gate-hero{margin-top:70px;padding:38px 0}.gate-hero h1{font-size:34px}.gate-hero p:not(.eyebrow){font-size:15px}.gate-section{padding:36px 0}.gate-type{grid-template-columns:1fr;gap:24px;margin-top:24px}.gate-photo img{height:auto;max-height:500px}.gate-specs,.gate-gallery{grid-template-columns:1fr;gap:20px}.gate-gallery .gate-photo img{height:auto;max-height:480px}.gate-type+.gate-type{margin-top:30px;padding-top:30px}.gate-specs article{padding:23px}}
