@@ -79,3 +79,9 @@
 .service-image-note{position:absolute;bottom:7px;right:7px;background:#14372ed9;color:#fff;font-size:12px;line-height:1.5;padding:2px 6px}
 @media(max-width:1100px){.service-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}}
 @media(max-width:600px){.service-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 16px;margin:0 0 24px}.service-sector figcaption{font-size:16px;padding-top:10px}}
+
+/* Integrated service image captions — 2026-11-23 */
+.service-sector{position:relative;isolation:isolate;overflow:hidden}
+.service-sector::after{content:"";position:absolute;inset:32% 0 0;background:linear-gradient(180deg,transparent 0%,rgba(5,29,25,.22) 44%,rgba(5,29,25,.8) 100%);pointer-events:none;z-index:1}
+.service-sector figcaption{position:absolute;bottom:0;left:0;right:0;padding:18px 16px;color:#fff;text-align:left;font-size:18px;font-weight:600;letter-spacing:.08em;z-index:2;text-shadow:0 1px 5px #071f2433}
+@media(max-width:600px){.service-sector figcaption{font-size:16px;padding:12px;letter-spacing:.04em}}
