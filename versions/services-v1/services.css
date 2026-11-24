@@ -97,10 +97,10 @@ html[lang=en] .service-card h3{font-size:25px;min-height:68px;line-height:1.2;te
 @media(prefers-reduced-motion:reduce){.trial-case-copy,.trial-case-copy p,.trial-case-photo img{transition:none}.trial-case-card:hover img{transform:none}}
 .service-description-desktop{display:none}
 @media(min-width:761px){
- :is(.wastewater-desktop-revision,.purification-desktop-revision) .service-description-mobile,
- :is(.wastewater-desktop-revision,.purification-desktop-revision) .service-row-copy>dl,
- :is(.wastewater-desktop-revision,.purification-desktop-revision) .service-row-copy>.button{display:none}
- :is(.wastewater-desktop-revision,.purification-desktop-revision) .service-description-desktop{display:block;margin:0;line-height:2}
+ :is(.wastewater-desktop-revision,.purification-desktop-revision,.membranes-desktop-revision) .service-description-mobile,
+ :is(.wastewater-desktop-revision,.purification-desktop-revision,.membranes-desktop-revision) .service-row-copy>dl,
+ :is(.wastewater-desktop-revision,.purification-desktop-revision,.membranes-desktop-revision) .service-row-copy>.button{display:none}
+ :is(.wastewater-desktop-revision,.purification-desktop-revision,.membranes-desktop-revision) .service-description-desktop{display:block;margin:0;line-height:2}
 }
 /* Desktop trial: nine customer categories with compact case links. */
 .trial-cases-heading{display:none}
