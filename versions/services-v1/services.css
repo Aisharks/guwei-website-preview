@@ -159,3 +159,5 @@ html[lang=en] .service-card h3{font-size:25px;min-height:68px;line-height:1.2;te
  .service-detail .service-hero>.container{grid-template-columns:minmax(200px,1fr) minmax(0,1.4fr);gap:12px 24px}
  .service-detail .service-hero h1{font-size:28px}
 }
+/* Combined municipal and building case index. */
+.civil-case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;padding-block:36px 48px}.civil-case-grid h2{font-size:22px;line-height:1.4;margin:0 0 14px}.civil-case-grid .trial-case-copy{padding:26px}.civil-case-grid .trial-case-link{display:inline-flex;gap:20px;font-size:13px;color:var(--green)}@media(max-width:760px){.civil-case-grid{grid-template-columns:1fr}.civil-case-grid .trial-case-card{background:var(--pale)}.civil-case-grid .trial-case-photo img{width:100%}}
