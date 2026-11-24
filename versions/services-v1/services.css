@@ -59,3 +59,18 @@ html[lang=en] .service-card h3{font-size:25px;min-height:68px;line-height:1.2;te
 }
 @media(min-width:761px) and (max-width:1000px){.service-nav-grid{gap:16px}.service-nav-name{font-size:18px}.service-nav-label{gap:7px}.service-nav-arrow{width:23px;height:23px}.service-nav-intro{grid-template-columns:1fr 1.2fr}html[lang=en] .service-nav-name{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.service-nav-card::before,.service-nav-arrow,.service-nav-card img{transition:none}.service-nav-card:hover img{transform:none}}
+
+/* Desktop image navigation: titles inside photographs, without numbers or captions. */
+@media(min-width:761px){
+ .service-nav-card{padding:0;border:0;isolation:isolate;overflow:hidden}
+ .service-nav-card::before{display:none}
+ .service-nav-card::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,transparent 20%,rgba(5,35,30,.16) 45%,rgba(5,35,30,.88) 100%)}
+ .service-nav-image{aspect-ratio:1.65/1}
+ .service-nav-label{position:absolute;inset:auto 17px 15px;z-index:2;display:flex;align-items:center;gap:10px;margin:0;min-height:0}
+ .service-nav-name{color:#fff;font-size:21px;text-shadow:0 1px 3px #0003}
+ .service-nav-arrow{color:#fff;border-color:#ffffff75;background:#ffffff0d;width:27px;height:27px}
+ .service-nav-card:hover .service-nav-arrow{background:var(--green);border-color:var(--green)}
+ html[lang=en] .service-nav-label{min-height:0;inset-inline:15px}
+ html[lang=en] .service-nav-name{font-size:17px;line-height:1.35}
+}
+@media(min-width:761px) and (max-width:1000px){.service-nav-label{inset-inline:12px;bottom:12px}.service-nav-name{font-size:18px}.service-nav-arrow{width:23px;height:23px}html[lang=en] .service-nav-label{inset-inline:12px}html[lang=en] .service-nav-name{font-size:15px}}
