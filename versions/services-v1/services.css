@@ -120,3 +120,7 @@ html[lang=en] .service-card h3{font-size:25px;min-height:68px;line-height:1.2;te
  .trial-case-pending .trial-case-link,.trial-case-pending:hover .trial-case-link{color:#98a69e;border-color:#d8e1db;cursor:default}
 }
 @media(prefers-reduced-motion:reduce){.trial-case-link{transition:none}}
+
+.service-label-mobile{display:none}
+@media(max-width:760px){.service-label-desktop{display:none}.service-label-mobile{display:inline}}
+
