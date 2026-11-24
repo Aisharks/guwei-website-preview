@@ -102,3 +102,21 @@ html[lang=en] .service-card h3{font-size:25px;min-height:68px;line-height:1.2;te
  .wastewater-desktop-revision .service-row-copy>.button{display:none}
  .wastewater-desktop-revision .service-description-desktop{display:block;margin:0;line-height:2}
 }
+/* Desktop trial: nine customer categories with compact case links. */
+.trial-cases-heading{display:none}
+@media(min-width:761px){
+ .trial-cases-heading{display:block;font-size:30px;line-height:1.4;font-weight:600;margin:4px 0 28px;padding-left:18px;border-left:3px solid var(--green);color:var(--ink)}
+ .trial-case-copy{display:flex;flex-direction:column;align-items:flex-start;gap:0}
+ .trial-case-copy p{flex:1;margin-bottom:22px}
+ .trial-case-link{display:inline-flex;align-items:center;gap:20px;padding:7px 13px;min-height:34px;border:1px solid #97b4a4;background:transparent;border-radius:2px;color:var(--green);font:inherit;font-size:12px;font-weight:600;line-height:1.4;text-decoration:none;transition:background .2s,border-color .2s,color .2s}
+ .trial-case-link>span:last-child{font-size:15px;font-weight:400;line-height:1}
+ .trial-case-card:focus-within .trial-case-copy{background:var(--green);color:#fff}
+ .trial-case-card:focus-within p{color:#edf5ef}
+ .trial-case-card:hover .trial-case-link,.trial-case-card:focus-within .trial-case-link{color:white;border-color:#ffffff80}
+ .trial-case-link:hover{background:#ffffff16;border-color:white}
+ .trial-case-link:focus-visible{outline:2px solid white;outline-offset:4px}
+ .trial-case-pending .trial-case-photo{background:#eef2f0}
+ .trial-case-pending .trial-case-copy,.trial-case-pending:hover .trial-case-copy{background:#f6f8f7;color:#94a49b}
+ .trial-case-pending .trial-case-link,.trial-case-pending:hover .trial-case-link{color:#98a69e;border-color:#d8e1db;cursor:default}
+}
+@media(prefers-reduced-motion:reduce){.trial-case-link{transition:none}}
