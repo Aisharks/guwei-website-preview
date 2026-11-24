@@ -29,3 +29,6 @@ html[lang=en] .service-card h3{font-size:25px;min-height:68px;line-height:1.2;te
 /* Keep the original mobile capability band until mobile design is approved. */
 .service-preview .capability-band{display:none}
 @media(max-width:760px){.service-preview .capability-band{display:block}.service-navigation{display:none}}
+/* Desktop trial: compact service navigation leads straight into project cases. */
+#services{scroll-margin-top:90px}
+@media(min-width:761px){.service-preview .services-home{display:none}}
