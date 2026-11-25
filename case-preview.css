@@ -211,6 +211,18 @@
  .case-livestock .lc-subtitle{font-size:14px;line-height:1.5}
  .case-livestock .lc-nav a{padding:11px 0}
 }
+/* Captions sit within the images so each card remains compact. */
+@media(min-width:761px){
+ .case-livestock .lc-photo{position:relative;overflow:hidden}
+ .case-livestock .lc-photo figcaption,.case-livestock .lc-gallery .lc-photo figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;margin:0;padding:38px 16px 14px;color:#fff;background:linear-gradient(180deg,transparent,rgba(10,29,25,.76));font-size:13px;line-height:1.6;text-shadow:0 1px 3px #0005;pointer-events:none}
+ .case-livestock .lc-product-link{position:relative;display:block}
+ .case-livestock .lc-product-image{padding:0}
+ .case-livestock .lc-product-image img{object-fit:cover}
+ .case-livestock .lc-product-copy{position:absolute;left:0;right:0;bottom:0;z-index:1;display:block;padding:48px 18px 16px;background:linear-gradient(180deg,transparent,rgba(10,29,25,.8));pointer-events:none}
+ .case-livestock .lc-product h3,html[lang=en] .case-livestock .lc-product h3{margin:0;color:#fff;font-size:17px;line-height:1.5;text-shadow:0 1px 3px #0005}
+ .case-livestock .lc-photo a:focus-visible{outline:2px solid #fff;outline-offset:-4px}
+ .case-livestock .lc-product-link:focus-visible{outline-color:#fff;outline-offset:-4px}
+}
 @keyframes lc-water-flow{0%{left:10%;opacity:0}4%{opacity:1}96%{opacity:1}100%{left:calc(90% - 12px);opacity:0}}
 @keyframes lc-node-pulse{0%,22%,100%{box-shadow:0 0 0 1px #d6e9de}5%{box-shadow:0 0 0 5px #51b98924}15%{box-shadow:0 0 0 9px #51b98900}}
 @media(prefers-reduced-motion:reduce){.case-livestock .lc-photo img,.case-livestock .lc-process h3{transition:none}.case-livestock .lc-process::after,.case-livestock .lc-process-dot{animation:none}.case-livestock .lc-process::after{display:none}}
