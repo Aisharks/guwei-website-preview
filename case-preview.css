@@ -143,6 +143,18 @@
   .case-livestock #project-standards .lc-section-head>p{margin:0;max-width:270px;text-align:right}
  }
 }
+@media(min-width:761px){
+ .case-livestock .lc-overview-copy .lc-facts{grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+ .case-livestock .lc-overview-copy .lc-facts>div,.case-livestock .lc-overview-copy .lc-facts>div:first-child{grid-template-columns:30px minmax(0,1fr);column-gap:10px;padding:17px 14px}
+ .case-livestock .lc-overview-copy .lc-facts>div::before{width:30px;height:30px;background-size:18px}
+ .case-livestock .lc-overview-copy .lc-facts dd{font-size:25px;white-space:nowrap}
+ .case-livestock .lc-overview-copy .lc-facts dt{letter-spacing:0}
+ @media(max-width:1000px){
+  .case-livestock .lc-overview-copy .lc-facts>div,.case-livestock .lc-overview-copy .lc-facts>div:first-child{display:block;padding:15px 12px}
+  .case-livestock .lc-overview-copy .lc-facts>div::before{display:none}
+  .case-livestock .lc-overview-copy .lc-facts dd{font-size:23px}
+ }
+}
 @keyframes lc-water-flow{0%{left:10%;opacity:0}4%{opacity:1}96%{opacity:1}100%{left:calc(90% - 12px);opacity:0}}
 @keyframes lc-node-pulse{0%,22%,100%{box-shadow:0 0 0 1px #d6e9de}5%{box-shadow:0 0 0 5px #51b98924}15%{box-shadow:0 0 0 9px #51b98900}}
 @media(prefers-reduced-motion:reduce){.case-livestock .lc-photo img,.case-livestock .lc-process h3{transition:none}.case-livestock .lc-process::after,.case-livestock .lc-process-dot{animation:none}.case-livestock .lc-process::after{display:none}}
