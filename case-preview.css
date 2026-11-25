@@ -93,4 +93,56 @@
   .case-livestock .lc-gallery{gap:16px}
  }
 }
-@media(prefers-reduced-motion:reduce){.case-livestock .lc-photo img{transition:none}}
+/* Refined project metrics, flowing process and compact design requirements. */
+@media(min-width:761px){
+ .case-livestock .lc-facts{grid-template-columns:1fr .9fr 1.25fr;gap:14px;padding:0;border:0;margin-top:24px}
+ .case-livestock .lc-facts>div,.case-livestock .lc-facts>div:first-child{position:relative;display:grid;grid-template-columns:38px 1fr;column-gap:14px;align-content:center;padding:19px 22px;border:1px solid #e2ebe6;border-radius:8px;background:linear-gradient(125deg,#f4f9f6,#fff 75%);box-shadow:0 3px 12px #153d3603}
+ .case-livestock .lc-facts>div::before{content:"";grid-row:1/3;align-self:center;width:38px;height:38px;border-radius:50%;background:#e8f3ed url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d8762' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3s-6 7-6 11a6 6 0 0 0 12 0c0-4-6-11-6-11Z'/%3E%3Cpath d='M9 15c0 2 1 3 3 3'/%3E%3C/svg%3E") center/21px no-repeat}
+ .case-livestock .lc-facts>div:nth-child(2)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d8762' stroke-width='1.4' stroke-linecap='round'%3E%3Crect x='4' y='6' width='16' height='15' rx='2'/%3E%3Cpath d='M8 3v6m8-6v6M4 11h16m-11 5 2 2 4-4'/%3E%3C/svg%3E")}
+ .case-livestock .lc-facts>div:nth-child(3)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d8762' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 8 9-5 9 5-9 5-9-5Zm0 5 9 5 9-5M3 18l9 5 9-5'/%3E%3C/svg%3E")}
+ .case-livestock .lc-facts dt{font-size:12px;line-height:1.5;letter-spacing:.4px;margin:0 0 5px}
+ .case-livestock .lc-facts dd{font-size:28px;font-weight:550;line-height:1.2;letter-spacing:-.5px;color:#204c3c}
+ .case-livestock .lc-facts dd span{font-size:13px;letter-spacing:0;color:#6e8178;margin-left:3px}
+ .case-livestock .lc-facts .lc-fact-text,html[lang=en] .case-livestock .lc-facts .lc-fact-text{font-size:16px;line-height:1.5;font-weight:550;letter-spacing:0}
+ .case-livestock .lc-site-scale dd{font-size:17px;font-weight:550}
+ .case-livestock #project-process{padding-top:30px;padding-bottom:30px;background:#f5f8f6}
+ .case-livestock #project-process .lc-section-head{margin-bottom:18px}
+ .case-livestock #project-process h2,.case-livestock #project-standards h2{font-size:23px}
+ .case-livestock .lc-process{position:relative;isolation:isolate;padding:0;border:1px solid #e2ebe6;border-radius:9px;background:white;overflow:hidden}
+ .case-livestock .lc-process::before{content:"";position:absolute;left:10%;right:10%;top:30px;height:2px;background:#dcebe2}
+ .case-livestock .lc-process::after{content:"";position:absolute;z-index:0;left:10%;top:28px;width:34px;height:6px;border-radius:50%;background:linear-gradient(90deg,transparent,#38af7b);box-shadow:5px 0 9px #47b78933;animation:lc-water-flow 7s linear infinite;pointer-events:none}
+ .case-livestock .lc-process li{z-index:1;padding:20px 12px 22px;border:0;background:none}
+ .case-livestock .lc-process li::before{display:none}
+ .case-livestock .lc-process-dot{width:20px;height:20px;border:5px solid #edf6f1;margin-bottom:12px;background:#2c9568;box-shadow:0 0 0 1px #d6e9de;animation:lc-node-pulse 7s ease-out infinite}
+ .case-livestock .lc-process li:nth-child(2) .lc-process-dot{animation-delay:1.7s}
+ .case-livestock .lc-process li:nth-child(3) .lc-process-dot{animation-delay:3.4s}
+ .case-livestock .lc-process li:nth-child(4) .lc-process-dot{animation-delay:5.1s}
+ .case-livestock .lc-process li:nth-child(5) .lc-process-dot{animation-delay:6.8s}
+ .case-livestock .lc-process h3{font-size:16px;font-weight:550;transition:color .2s,transform .2s}
+ .case-livestock .lc-process li:hover h3{color:var(--brand);transform:translateY(-2px)}
+ .case-livestock #project-standards{display:grid;grid-template-columns:210px minmax(0,1fr);gap:30px;padding-top:32px;padding-bottom:32px;align-items:start}
+ .case-livestock #project-standards .lc-section-head{display:block;margin:7px 0 0}
+ .case-livestock #project-standards .lc-section-head>p{text-align:left;font-size:11px;line-height:1.7;margin-top:10px;max-width:195px;color:#7b8a83}
+ .case-livestock #project-standards .lc-kicker{font-size:10px;letter-spacing:1.4px}
+ .case-livestock .lc-standards{border:1px solid #e1e9e4;border-radius:8px;overflow:hidden;background:#fcfdfc}
+ .case-livestock .lc-standard{grid-template-columns:142px minmax(0,1fr) 175px;gap:14px;padding:12px 16px;min-height:59px;border-bottom:1px solid #e7ede9}
+ .case-livestock .lc-standard:first-child{border-top:0}
+ .case-livestock .lc-standard:last-child{border-bottom:0}
+ .case-livestock .lc-standard-code{font-size:12px;color:#577467;font-weight:550;white-space:nowrap}
+ .case-livestock .lc-standard h3{font-size:13px;line-height:1.65;color:#3f574c;font-weight:400}
+ .case-livestock .lc-standard p{font-size:12px;line-height:1.65;padding:0 0 0 13px;border-left:2px solid #bcdbca;border-radius:0;background:none;color:#23734f}
+ html[lang=en] .case-livestock .lc-standard{grid-template-columns:130px minmax(0,1fr) 155px}
+ html[lang=en] .case-livestock .lc-standard h3{font-size:12px}
+ @media(max-width:1000px){
+  .case-livestock .lc-facts>div,.case-livestock .lc-facts>div:first-child{padding:16px 14px;grid-template-columns:30px 1fr;column-gap:10px}
+  .case-livestock .lc-facts>div::before{width:30px;height:30px;background-size:18px}
+  .case-livestock .lc-facts dd{font-size:25px}
+  .case-livestock .lc-facts .lc-fact-text,html[lang=en] .case-livestock .lc-facts .lc-fact-text{font-size:14px}
+  .case-livestock #project-standards{grid-template-columns:1fr;gap:16px}
+  .case-livestock #project-standards .lc-section-head{display:flex;margin:0;align-items:end}
+  .case-livestock #project-standards .lc-section-head>p{margin:0;max-width:270px;text-align:right}
+ }
+}
+@keyframes lc-water-flow{0%{left:10%;opacity:0}4%{opacity:1}96%{opacity:1}100%{left:calc(90% - 12px);opacity:0}}
+@keyframes lc-node-pulse{0%,22%,100%{box-shadow:0 0 0 1px #d6e9de}5%{box-shadow:0 0 0 5px #51b98924}15%{box-shadow:0 0 0 9px #51b98900}}
+@media(prefers-reduced-motion:reduce){.case-livestock .lc-photo img,.case-livestock .lc-process h3{transition:none}.case-livestock .lc-process::after,.case-livestock .lc-process-dot{animation:none}.case-livestock .lc-process::after{display:none}}
