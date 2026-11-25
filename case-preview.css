@@ -125,7 +125,7 @@
  .case-livestock #project-standards .lc-section-head>p{text-align:left;font-size:11px;line-height:1.7;margin-top:10px;max-width:195px;color:#7b8a83}
  .case-livestock #project-standards .lc-kicker{font-size:10px;letter-spacing:1.4px}
  .case-livestock .lc-standards{border:1px solid #e1e9e4;border-radius:8px;overflow:hidden;background:#fcfdfc}
- .case-livestock .lc-standard{grid-template-columns:142px minmax(0,1fr) 175px;gap:14px;padding:12px 16px;min-height:59px;border-bottom:1px solid #e7ede9}
+ .case-livestock .lc-standard{grid-template-columns:142px minmax(0,1fr) 218px;gap:14px;padding:12px 16px;min-height:59px;border-bottom:1px solid #e7ede9}
  .case-livestock .lc-standard:first-child{border-top:0}
  .case-livestock .lc-standard:last-child{border-bottom:0}
  .case-livestock .lc-standard-code{font-size:12px;color:#577467;font-weight:550;white-space:nowrap}
