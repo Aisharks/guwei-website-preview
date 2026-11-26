@@ -10,8 +10,10 @@
  body.case-municipal .lc-facts>.mc-date::before{grid-row:1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d8762' stroke-width='1.4'%3E%3Crect x='4' y='6' width='16' height='15' rx='2'/%3E%3Cpath d='M8 3v6m8-6v6M4 11h16m-11 5 2 2 4-4'/%3E%3C/svg%3E")}
  body.case-municipal .lc-facts>.mc-date dt{margin:0;grid-column:2}
  body.case-municipal .lc-facts>.mc-date dd{grid-column:3;font-size:23px}
- .case-municipal .mc-process{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:38px 26px;list-style:none;margin:0;padding:26px 28px;background:white;border:1px solid var(--line);border-radius:9px}
- .case-municipal .mc-process li{--step-delay:0s;position:relative;min-width:0;padding:14px 12px;background:#f6faf7;border:1px solid #e0ece4;border-radius:6px;text-align:center;animation:mc-stage 10.4s linear infinite;animation-delay:var(--step-delay)}
+ .case-municipal #project-process{padding-top:26px;padding-bottom:26px}
+ .case-municipal #project-process .lc-section-head{margin-bottom:16px}
+ .case-municipal .mc-process{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;list-style:none;margin:0;padding:0;background:transparent;border:0}
+ .case-municipal .mc-process li{--step-delay:0s;position:relative;min-width:0;padding:9px 10px;background:#f6faf7;border:1px solid #e0ece4;border-radius:3px;text-align:center;animation:mc-stage 10.4s linear infinite;animation-delay:var(--step-delay)}
  .case-municipal .mc-process li:nth-child(2){--step-delay:1.3s}
  .case-municipal .mc-process li:nth-child(3){--step-delay:2.6s}
  .case-municipal .mc-process li:nth-child(4){--step-delay:3.9s}
@@ -26,15 +28,15 @@
  .case-municipal .mc-process li:nth-child(7){grid-area:2/2}
  .case-municipal .mc-process li:nth-child(8){grid-area:2/1}
  .case-municipal .mc-process li::after{content:'→';position:absolute;left:calc(100% + 1px);width:26px;top:50%;transform:translateY(-50%);font-size:21px;font-weight:600;color:#168353;animation:mc-arrow-right 1.3s ease-in-out infinite}
- .case-municipal .mc-process li:nth-child(4)::after{content:'↓';top:100%;left:calc(50% - 13px);height:38px;line-height:38px;transform:none;animation-name:mc-arrow-down}
+ .case-municipal .mc-process li:nth-child(4)::after{content:'↓';top:100%;left:calc(50% - 13px);height:26px;line-height:26px;transform:none;animation-name:mc-arrow-down}
  .case-municipal .mc-process li:nth-child(n+5)::after{content:'←';left:auto;right:calc(100% + 1px);animation-name:mc-arrow-left}
  .case-municipal .mc-process li:last-child::after{display:none}
- .case-municipal .mc-step{display:inline-flex;align-items:center;gap:7px;color:#4b7964;font-size:11px;letter-spacing:1px;margin-bottom:7px;font-variant-numeric:tabular-nums}
+ .case-municipal .mc-step{display:inline-flex;align-items:center;gap:6px;color:#4b7964;font-size:10px;line-height:1.4;letter-spacing:1px;margin-bottom:3px;font-variant-numeric:tabular-nums}
  .case-municipal .mc-step::before{content:'';width:7px;height:7px;border-radius:50%;background:#28986c;animation:mc-pulse 10.4s ease-out infinite;animation-delay:var(--step-delay)}
- .case-municipal .mc-process h3{margin:0;font-size:16px;line-height:1.5;font-weight:600}
- .case-municipal .mc-process p{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.6}
- .case-municipal .mc-process .mc-branch{border-top:1px dashed #c8dfd1;margin-top:10px;padding-top:7px;color:#327559}
- .case-municipal .mc-control{display:flex;align-items:center;justify-content:center;gap:12px;margin:16px 0 0;color:#5d7569;font-size:13px}
+ .case-municipal .mc-process h3{margin:0;font-size:14px;line-height:1.5;font-weight:600}
+ .case-municipal .mc-process p{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
+ .case-municipal .mc-process .mc-branch{border-top:1px dashed #c8dfd1;margin-top:5px;padding-top:4px;color:#327559}
+ .case-municipal .mc-control{display:flex;align-items:center;justify-content:center;gap:10px;margin:10px 0 0;color:#5d7569;font-size:12px}
  .case-municipal .mc-control::before,.case-municipal .mc-control::after{content:'';width:42px;height:1px;background:#c5dfcf}
  .case-municipal .mc-control strong{font-weight:550;color:#226c4b}
  .case-municipal .lc-gallery .lc-photo img{object-fit:contain;background:#e9efeb}
