@@ -20,6 +20,14 @@
  .case-municipal .mc-process li:nth-child(7){grid-area:2/2}
  .case-municipal .mc-process li:nth-child(8){grid-area:2/1}
  .case-municipal .mc-step{position:relative;display:block;width:20px;height:20px;box-sizing:border-box;margin:0 auto 9px;border:5px solid #edf6f0;border-radius:50%;background:#28986c;box-shadow:0 0 0 1px #d5e9de;font-size:0;animation:mc-node-pulse 10s ease-out infinite;animation-delay:var(--flow-delay,0s)}
+ .case-municipal .mc-node{position:relative;display:block;width:20px;height:20px;margin:0 auto 9px}
+ .case-municipal .mc-node .mc-step{margin:0;padding:0;appearance:none;cursor:help}
+ .case-municipal .mc-node .mc-step:focus-visible{outline:2px solid #168353;outline-offset:4px}
+ .case-municipal .mc-tooltip{position:absolute;z-index:5;bottom:calc(100% + 11px);left:50%;transform:translateX(-50%);display:block;width:max-content;max-width:235px;box-sizing:border-box;padding:10px 14px;border:1px solid #d8e7de;border-radius:6px;background:#fff;box-shadow:0 5px 18px #123d3617;text-align:center;visibility:hidden;opacity:0;pointer-events:none;transition:opacity .12s ease}
+ .case-municipal .mc-tooltip::after{content:'';position:absolute;left:calc(50% - 4px);bottom:-5px;width:8px;height:8px;transform:rotate(45deg);background:white;border-right:1px solid #d8e7de;border-bottom:1px solid #d8e7de}
+ .case-municipal .mc-node:not(.mc-tip-dismissed)>.mc-step:hover+.mc-tooltip,.case-municipal .mc-node:not(.mc-tip-dismissed)>.mc-step:focus-visible+.mc-tooltip{visibility:visible;opacity:1}
+ .case-municipal .mc-process li:has(.mc-step:hover),.case-municipal .mc-process li:focus-within{z-index:4}
+ .case-municipal .mc-process .mc-tooltip p{margin:0;color:#325e50;font-size:12px;line-height:1.6}
  .case-municipal .mc-process h3{margin:0;font-size:14px;line-height:1.5;font-weight:600}
  .case-municipal .mc-process p{margin:3px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
  .case-municipal .mc-process .mc-branch{display:inline-block;border-top:1px dashed #c8dfd1;margin-top:5px;padding-top:4px;color:#327559}
@@ -175,6 +183,33 @@
   const list = document.querySelector('.case-municipal .mc-process');
   if (!list) return;
   const items = [...list.querySelectorAll('li')];
+  items.forEach((item, index) => {
+    const notes = [...item.querySelectorAll('p')];
+    if (!notes.length) return;
+    const dot = item.querySelector('.mc-step');
+    const node = document.createElement('span');
+    node.className = 'mc-node';
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'mc-step';
+    button.setAttribute('aria-label', item.querySelector('h3').textContent);
+    const tip = document.createElement('span');
+    tip.className = 'mc-tooltip';
+    tip.id = `mc-tip-${index + 1}`;
+    tip.setAttribute('role', 'tooltip');
+    button.setAttribute('aria-describedby', tip.id);
+    notes.forEach(note => tip.append(note));
+    dot.replaceWith(node);
+    node.append(button, tip);
+    button.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+        node.classList.add('mc-tip-dismissed');
+        button.blur();
+      }
+    });
+    button.addEventListener('pointerleave', () => node.classList.remove('mc-tip-dismissed'));
+    button.addEventListener('focus', () => node.classList.remove('mc-tip-dismissed'));
+  });
   const ns = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(ns, 'svg');
   svg.classList.add('mc-flow-track');
