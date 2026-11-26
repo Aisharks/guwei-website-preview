@@ -45,13 +45,15 @@
 @keyframes mc-node-pulse{0%,12%,100%{box-shadow:0 0 0 1px #d5e9de}4%{box-shadow:0 0 0 7px #43b98a18}10%{box-shadow:0 0 0 10px #43b98a00}}
 @media(prefers-reduced-motion:reduce){.case-municipal .mc-step{animation:none}.case-municipal .mc-flow-comet{display:none}}
 </style><style>@media(min-width:761px){
- .case-lecong .lc-overview>.lc-photo img{aspect-ratio:8/5;object-fit:contain}
+ .case-lecong .lc-overview>.lc-photo img{aspect-ratio:3/2;object-fit:cover}
  .case-lecong .lc-overview-copy .lc-facts{grid-template-columns:1fr 1fr}
  .case-lecong .lc-gallery{grid-template-columns:repeat(6,minmax(0,1fr))}
  .case-lecong .lc-gallery .lc-photo{grid-column:span 2}
  .case-lecong .lc-gallery .lc-photo:nth-child(-n+2){grid-column:span 3}
  .case-lecong .lc-facts>div:nth-child(2)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232d8762' stroke-width='1.4'%3E%3Crect x='4' y='6' width='16' height='15' rx='2'/%3E%3Cpath d='M8 3v6m8-6v6M4 11h16m-11 5 2 2 4-4'/%3E%3C/svg%3E")}
 }
+.case-lecong .lc-gallery .lc-photo img{aspect-ratio:16/9;object-fit:cover}
+.case-lecong .lc-overview>.lc-photo img{aspect-ratio:3/2;object-fit:cover}
 @media(max-width:760px){
  .case-lecong .case-desktop{display:block}
  .case-lecong .lc-hero{padding:24px 0;background:linear-gradient(105deg,#f5f8f5,#d5ebe2)}
