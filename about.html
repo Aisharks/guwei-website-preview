@@ -129,6 +129,203 @@ html.js .about-page .ab-nav{display:block}
 .about-page #company-culture .ab-values p{font-size:13px;line-height:1.75}
 html[lang^="en"] .about-page #company-culture .ab-values article{grid-template-columns:108px minmax(0,1fr)}
 }
+</style><style id="about-polish">.about-page .ab-section:not(#company-culture):not(#company-credentials){padding:42px 0}
+.about-page .ab-hero-grid{min-height:320px}
+.about-page .ab-hero-copy{padding:30px 40px 30px 0}
+.about-page .ab-label{margin-bottom:12px;font-size:12px}
+.about-page h1{font-size:clamp(32px,3.2vw,40px);margin-bottom:14px}
+.about-page .ab-hero-copy>p{font-size:15px;line-height:1.8}
+.about-page .ab-hero-tags{margin-top:18px}
+.about-page .ab-heading{margin-bottom:22px;gap:24px}
+.about-page .ab-heading h2,.about-page .ab-profile-grid h2{font-size:27px;line-height:1.45}
+.about-page .ab-profile-grid{grid-template-columns:.65fr 1.35fr;gap:48px}
+.about-page .ab-intro p{line-height:1.85}
+.about-page .ab-intro p+p{margin-top:12px}
+.about-page .ab-year{margin-top:20px;gap:14px}
+.about-page .ab-year strong{font-size:42px}
+.about-page .ab-year span{padding-left:14px}
+.about-page .ab-service-chain{margin:26px 0 0}
+.about-page .ab-service-chain li{padding:16px 20px}
+.about-page .ab-service-chain span{margin-bottom:5px}
+.about-page .ab-service-chain h3{font-size:16px;margin-bottom:5px}
+.about-page .ab-environment{grid-template-rows:180px 180px;gap:12px}
+.about-page .ab-client-grid{height:240px;gap:12px}
+.about-page .ab-photo figcaption{padding:30px 16px 12px;font-size:12px}
+.about-page .ab-advantages article{padding:20px 22px}
+.about-page .ab-adv-title{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
+.about-page .ab-adv-title span{font-size:10px;margin:0;flex-shrink:0;font-variant-numeric:tabular-nums}
+.about-page .ab-adv-title h3{font-size:17px;margin:0;line-height:1.5}
+.about-page .ab-advantages p{font-size:13px;line-height:1.8}
+.about-page .ab-suppliers{padding-top:24px}
+.about-page .ab-suppliers>p{margin-bottom:12px}
+.about-page .ab-logos{gap:12px}
+.about-page .ab-logos div{height:58px;border:0;background:transparent;padding:10px 14px}
+.about-page .ab-logos img{height:38px;width:100%;max-width:130px;object-fit:contain;mix-blend-mode:multiply}
+.about-page .ab-contact{padding:28px 0;align-items:center}
+.about-page .ab-contact h2{font-size:22px;margin:0}
+.about-page .ab-contact-links{gap:24px}
+.about-page .ab-phone{font-size:23px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.about-page .ab-contact .button{padding:11px 20px;white-space:nowrap}
+.about-page .ab-nav .ab-wrap{padding:0;gap:32px;scroll-padding-inline:16px}
+.about-page .ab-nav a{position:relative;display:block;flex-shrink:0;padding:16px 0;line-height:20px}
+.about-page .ab-nav a:after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--ab-green);transform:scaleX(0);transition:transform .18s ease}
+.about-page .ab-nav a[aria-current="location"]{color:var(--ab-green)}
+.about-page .ab-nav a[aria-current="location"]:after{transform:scaleX(1)}
+.about-page .ab-nav:before,.about-page .ab-nav:after{content:'';position:absolute;top:0;bottom:0;width:26px;z-index:1;pointer-events:none;opacity:0;transition:opacity .15s}
+.about-page .ab-nav:before{left:0;background:linear-gradient(90deg,#fff,transparent)}
+.about-page .ab-nav:after{right:0;background:linear-gradient(270deg,#fff,transparent)}
+.about-page .ab-nav.has-before:before,.about-page .ab-nav.has-after:after{opacity:1}
+.about-page section[id]{scroll-margin-top:155px}
+.about-page .ab-certificate{cursor:zoom-in}
+.about-page .ab-certificate:after{content:'\2922';position:absolute;bottom:16px;right:20px;width:34px;height:34px;display:grid;place-items:center;border:1px solid #ffffff90;border-radius:50%;background:#123b38c9;color:#fff;font-size:22px;line-height:1;pointer-events:none}
+.ab-cert-dialog{position:fixed;inset:0;width:min(1280px,calc(100vw - 32px));height:min(900px,calc(100dvh - 32px));max-width:none;max-height:none;margin:auto;padding:0;border:1px solid #ffffff30;border-radius:8px;background:#132e2c;color:white;overflow:hidden}
+.ab-cert-dialog::backdrop{background:#071b19de}
+.ab-cert-dialog[open]{display:flex;flex-direction:column}
+.ab-cert-toolbar{display:flex;align-items:center;gap:8px;flex-shrink:0;min-height:60px;padding:8px 14px;border-bottom:1px solid #ffffff20}
+.ab-cert-toolbar strong{margin-right:auto;font-size:14px;font-weight:500}
+.ab-cert-toolbar button{min-width:40px;height:40px;padding:0 10px;border:1px solid #ffffff40;border-radius:4px;background:#ffffff0c;color:#fff;font-size:16px;cursor:pointer}
+.ab-cert-toolbar button:disabled{opacity:.35;cursor:default}
+.ab-cert-toolbar button:focus-visible{outline:2px solid #93d6ba;outline-offset:2px}
+.ab-cert-stage{overflow:auto;flex:1;min-height:0;overscroll-behavior:contain;touch-action:pan-x pan-y pinch-zoom;padding:16px;box-sizing:border-box}
+.ab-cert-sheet{position:relative;aspect-ratio:1594/919;overflow:hidden;margin:auto;background:#fff}
+.ab-cert-sheet img{display:block;position:absolute;left:0;top:0;width:100%;max-width:none;height:auto;transform:translateY(-10.68999%)}
+.ab-cert-help{padding:8px 12px;margin:0;color:#bed3cb;font-size:12px;text-align:center;flex-shrink:0}
+@media(max-width:1000px) and (min-width:761px){.about-page .ab-profile-grid{gap:30px;grid-template-columns:.7fr 1.3fr}.about-page .ab-contact-links{flex-direction:row}}
+@media(max-width:760px){
+ .about-page .ab-section:not(#company-culture):not(#company-credentials){padding:30px 0}
+ .about-page .ab-hero-grid{min-height:0}
+ .about-page .ab-hero-copy{padding:24px 0 22px}
+ .about-page h1{font-size:30px;margin-bottom:12px}
+ .about-page .ab-hero-copy>p{font-size:14px}
+ .about-page .ab-hero-tags{margin-top:16px}
+ .about-page .ab-hero-photo{height:180px}
+ .about-page .ab-nav .ab-wrap{gap:24px}
+ .about-page .ab-nav a{padding:13px 0;font-size:12px}
+ .about-page section[id]{scroll-margin-top:135px}
+ .about-page .ab-heading{margin-bottom:18px}
+ .about-page .ab-heading h2,.about-page .ab-profile-grid h2{font-size:24px}
+ .about-page .ab-profile-grid{grid-template-columns:1fr;gap:20px}
+ .about-page .ab-year{margin-top:14px}
+ .about-page .ab-year strong{font-size:36px}
+ .about-page .ab-intro p{font-size:14px;line-height:1.85}
+ .about-page .ab-service-chain{margin-top:22px}
+ .about-page .ab-service-chain li{padding:14px 12px!important}
+ .about-page .ab-service-chain li:nth-child(odd){padding-left:0!important}
+ .about-page .ab-service-chain h3{font-size:15px}
+ .about-page .ab-environment{grid-template-rows:210px 150px 130px;gap:10px}
+ .about-page .ab-client-grid{height:auto;gap:10px}
+ .about-page .ab-client-grid .ab-photo:first-child{height:200px}
+ .about-page .ab-client-grid .ab-photo{height:155px}
+ .about-page .ab-photo figcaption{font-size:11px;padding:26px 12px 10px}
+ .about-page .ab-advantages{grid-template-columns:1fr;border-left:0;background:white}
+ .about-page .ab-advantages article{display:grid;grid-template-columns:112px minmax(0,1fr);gap:12px;padding:16px 12px;border-right:0;align-items:start}
+ .about-page .ab-adv-title{gap:7px;margin:0}
+ .about-page .ab-adv-title h3{font-size:15px}
+ .about-page .ab-advantages p{font-size:13px;line-height:1.75}
+ .about-page .ab-suppliers{padding-top:20px}
+ .about-page .ab-logos{gap:8px}
+ .about-page .ab-logos div{height:48px;padding:7px 8px}
+ .about-page .ab-logos img{height:30px;max-width:100px}
+ .about-page .ab-contact{padding:24px 0}
+ .about-page .ab-contact h2{font-size:21px}
+ .about-page .ab-contact-links{gap:12px;margin-top:18px}
+ .about-page .ab-phone{font-size:21px}
+ .about-page .ab-contact .button{padding:10px 14px;font-size:13px}
+ .about-page .ab-certificate:after{width:28px;height:28px;font-size:20px;right:12px;bottom:10px}
+ .ab-cert-dialog{width:100vw;height:100dvh;border:0;border-radius:0}
+ .ab-cert-toolbar{padding:8px;gap:5px;padding-top:max(8px,env(safe-area-inset-top))}
+ .ab-cert-toolbar strong{font-size:13px}
+ .ab-cert-toolbar button{min-width:36px;padding:0 8px}
+ .ab-cert-stage{padding:12px}
+ .ab-cert-help{padding-bottom:max(10px,env(safe-area-inset-bottom))}
+ html[lang^="en"] .about-page .ab-advantages article{display:block}
+ html[lang^="en"] .about-page .ab-advantages .ab-adv-title{margin-bottom:6px}
+ html[lang^="en"] .about-page .ab-contact-links{flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){.about-page .ab-nav a:after,.about-page .ab-nav:before,.about-page .ab-nav:after{transition:none}}
 </style><link href="images/guwei-favicon.png" rel="icon" sizes="64x64" type="image/png"/><link href="images/guwei-apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="https://aisharks.github.io/guwei-website-preview/about.html" hreflang="zh-CN" rel="alternate"/><link href="https://aisharks.github.io/guwei-website-preview/en/about.html" hreflang="en" rel="alternate"/><link href="https://aisharks.github.io/guwei-website-preview/about.html" hreflang="x-default" rel="alternate"/><link data-bilingual-resource="" href="bilingual.css?v=e32cc9df93c3" rel="stylesheet"/><script data-bilingual-resource="" defer="" src="bilingual.js?v=30e828f3717a"></script></head>
 <body class="about-page" data-language="zh"><a class="skip" href="#main">跳到正文</a><header><div class="header_inner"><a aria-label="固威环保，返回首页" class="brand brand_with_logo" href="index.html"><img alt="" aria-hidden="true" class="brand_logo" height="460" src="uploads/a35a173900bf2d6f38e7bf679958a07f.jpg" width="640"/><strong>固威环保</strong><small>广州市固威环保科技开发有限公司</small></a><button aria-controls="navigation" aria-expanded="false" class="menu_toggle" type="button">菜单 <span aria-hidden="true">☰</span></button><nav aria-label="主导航" id="navigation"><a data-home-section="home" href="index.html#home">首页</a><a data-home-section="solutions" href="index.html#solutions">项目案例</a><a data-home-section="products" href="index.html#products">产品中心</a><a data-home-section="engineering_images" href="index.html#engineering">工程实拍</a><a data-home-section="qualifications" href="index.html#qualifications">荣誉与专利</a><a data-home-section="about" href="index.html#about">关于我们</a><a data-home-section="inquiry" href="index.html#contact">联系我们</a></nav><div aria-label="Language / 语言" class="language-switch" role="group"><a aria-current="page" aria-label="切换为中文" data-language-target="zh" href="about.html" hreflang="zh-CN" lang="zh-CN">中文</a><a aria-label="Switch to English" data-language-target="en" href="en/about.html" hreflang="en" lang="en">EN</a></div></div></header><main id="main"><section class="ab-hero"><div class="ab-wrap ab-hero-grid"><div class="ab-hero-copy"><span class="ab-label">关于固威环保</span><h1 data-edit="text_0">不造一滴水
-只精滤每一滴</h1><p data-edit="text_1">专注水处理设备研发与制造，提供一站式水务综合解决方案。</p><div class="ab-hero-tags"><span>高效</span><span>节能</span><span>环保</span></div></div><div class="ab-hero-photo"><img alt="地球与清澈水花" data-picture="image_0" decoding="async" fetchpriority="high" height="1706" src="assets/about-globe-water-20261128.webp" width="1800"/></div></div></section><nav aria-label="关于固威内容导航" class="ab-nav"><div class="ab-wrap"><a href="#company-profile">企业简介</a><a href="#company-culture">企业文化</a><a href="#company-environment">公司与制造</a><a href="#company-credentials">荣誉专利</a><a href="#company-clients">合作客户</a><a href="#company-strengths">企业优势</a></div></nav><section class="ab-section" id="company-profile"><div class="ab-wrap"><div class="ab-profile-grid"><div><span class="ab-overline">企业简介</span><h2 data-edit="text_2">专注水处理研发与制造</h2><div class="ab-year"><strong>2015</strong><span>公司成立<br/>中国 · 广州增城</span></div></div><div class="ab-intro"><p data-edit="text_3">广州市固威环保科技开发有限公司成立于2015年，坐落于广州市增城区中新镇福中路76号。公司专注于水处理设备、智慧水务管控平台及海水淡化设备的研发与生产，为市政、工业、畜牧业、医疗及民用水处理提供解决方案。</p><p data-edit="text_4">同时，固威开展工业系统规划设计与成套电气柜生产，提供电气规划、机电施工安装、设备运行调试及运营售后服务，服务环保、电子、化工、制造、新能源及自动化等领域。</p></div></div><ol class="ab-service-chain"><li><span>01</span><h3 data-edit="text_5">全过程咨询</h3><p data-edit="text_6">从需求与现场条件出发</p></li><li><span>02</span><h3 data-edit="text_7">研发设计</h3><p data-edit="text_8">衔接处理工艺与系统配置</p></li><li><span>03</span><h3 data-edit="text_9">生产制造</h3><p data-edit="text_10">水处理设备与成套电气柜</p></li><li><span>04</span><h3 data-edit="text_11">运维服务</h3><p data-edit="text_12">安装调试、运行与售后</p></li></ol></div></section><section class="ab-section ab-culture" id="company-culture"><div class="ab-wrap"><div class="ab-heading"><div><span class="ab-overline">企业文化理念</span><h2 data-edit="text_13">专业 · 专注 · 专一</h2></div><p data-edit="text_14">专注做好水处理设备，以产品与服务为客户创造价值。</p></div><div class="ab-values"><article><h3 data-edit="text_15">宗旨</h3><p data-edit="text_16">质量为本、诚信为先、创新为魂。</p></article><article><h3 data-edit="text_17">使命</h3><p data-edit="text_18">为客户创造价值，为员工创造机会，为社会创造财富。</p></article><article><h3 data-edit="text_19">理念</h3><p data-edit="text_20">不断更新技术，为客户提供更好的产品。</p></article><article><h3 data-edit="text_21">愿景</h3><p data-edit="text_22">成为国内水处理设备行业的一流品牌。</p></article></div></div></section><section class="ab-section" id="company-environment"><div class="ab-wrap"><div class="ab-heading"><div><span class="ab-overline">公司环境与生产设备</span><h2 data-edit="text_23">走进固威，走进制造现场</h2></div><p data-edit="text_24">从日常办公到生产车间，了解固威的工作环境与设备制造。</p></div><div class="ab-environment"><figure class="ab-photo has_photo"><a aria-label="放大查看：玻璃钢罐体缠绕制造" data-image-link="true" href="uploads/95cee1fa4bf7abf5c59e8fdaafbe0096.jpg"><img alt="玻璃钢罐体缠绕制造" data-picture="image_1" decoding="async" height="900" loading="lazy" src="uploads/95cee1fa4bf7abf5c59e8fdaafbe0096.jpg" width="1200"/></a><figcaption data-edit="text_25">玻璃钢罐体缠绕制造</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：公司接待区域" data-image-link="true" href="uploads/bb8a9ee4e12076210cd5aeb87ef73336.jpg"><img alt="公司接待区域" data-picture="image_2" decoding="async" height="900" loading="lazy" src="uploads/bb8a9ee4e12076210cd5aeb87ef73336.jpg" width="1200"/></a><figcaption data-edit="text_26">公司接待区域</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：公司外观" data-image-link="true" href="uploads/6157b13538fe820c6470b6d7bea7e680.jpg"><img alt="公司外观" data-picture="image_3" decoding="async" loading="lazy" src="uploads/6157b13538fe820c6470b6d7bea7e680.jpg"/></a><figcaption data-edit="text_27">公司外观</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：会议与交流空间" data-image-link="true" href="uploads/3c12795ee7e1b51f4bb6c83d3e61d2d6.jpg"><img alt="会议与交流空间" data-picture="image_4" decoding="async" loading="lazy" src="uploads/3c12795ee7e1b51f4bb6c83d3e61d2d6.jpg"/></a><figcaption data-edit="text_28">会议与交流空间</figcaption></figure></div></div></section><section class="ab-section ab-wash" id="company-credentials"><div class="ab-wrap ab-credentials"><a aria-label="放大查看荣誉与专利证书" class="ab-certificate" data-image-link="true" href="uploads/d07cb10e6d87df64e612a2c4b3a934ca.jpg"><img alt="固威环保荣誉与专利证书" data-picture="image_5" height="1029" loading="lazy" src="uploads/d07cb10e6d87df64e612a2c4b3a934ca.jpg" width="1594"/></a></div></section><section class="ab-section" id="company-clients"><div class="ab-wrap"><div class="ab-heading"><div><span class="ab-overline">合作客户</span><h2 data-edit="text_31">以交流建立了解，以合作连接需求</h2></div><p data-edit="text_32">客户来访、业务洽谈与行业交流，记录与合作伙伴的沟通时刻。</p></div><div class="ab-client-grid"><figure class="ab-photo has_photo"><a aria-label="放大查看：客户来访与业务交流" data-image-link="true" href="uploads/ea1e664cc150d2f5367561d5f870a291.jpg"><img alt="客户来访与业务交流" data-picture="image_6" decoding="async" loading="lazy" src="uploads/ea1e664cc150d2f5367561d5f870a291.jpg"/></a><figcaption data-edit="text_33">客户来访与业务交流</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：行业交流" data-image-link="true" href="uploads/f04ec3159a88e01f71a4b6f395b3650e.jpg"><img alt="行业交流" data-picture="image_7" decoding="async" loading="lazy" src="uploads/f04ec3159a88e01f71a4b6f395b3650e.jpg"/></a><figcaption data-edit="text_34">行业交流</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：合作交流" data-image-link="true" href="uploads/493397c4454e9adbaaa25a3903a8d3b2.jpg"><img alt="合作交流" data-picture="image_8" decoding="async" loading="lazy" src="uploads/493397c4454e9adbaaa25a3903a8d3b2.jpg"/></a><figcaption data-edit="text_35">合作交流</figcaption></figure></div></div></section><section class="ab-section ab-wash" id="company-strengths"><div class="ab-wrap"><div class="ab-heading"><div><span class="ab-overline">企业优势</span><h2 data-edit="text_36">为什么选择固威</h2></div><p data-edit="text_37">设备制造、智能控制与技术服务相衔接。</p></div><div class="ab-advantages"><article><span>01</span><h3 data-edit="text_38">源头厂家</h3><p data-edit="text_39">开展水处理设备研发与生产，衔接设计、制造与交付。</p></article><article><span>02</span><h3 data-edit="text_40">智能控制</h3><p data-edit="text_41">提供成套电气柜、PLC与触摸屏程序及自动化控制系统。</p></article><article><span>03</span><h3 data-edit="text_42">非标定制</h3><p data-edit="text_43">结合现场条件、处理需求与设备接口，组织方案配置。</p></article><article><span>04</span><h3 data-edit="text_44">安全可靠</h3><p data-edit="text_45">围绕安全保护、运行稳定与操作便利开展系统设计。</p></article><article><span>05</span><h3 data-edit="text_46">节能降耗</h3><p data-edit="text_47">将设备选型与控制配置结合，关注系统运行能耗。</p></article><article><span>06</span><h3 data-edit="text_48">售后保障</h3><p data-edit="text_49">提供安装调试、运行维护与技术支持，衔接设备全流程服务。</p></article></div><div class="ab-suppliers"><p data-edit="text_50">与国内外元器件厂家长期合作</p><div class="ab-logos"><div><img alt="ABB" data-picture="image_9" height="128" loading="lazy" src="uploads/7fa844ff88108ce7045a326c83b98795.jpg" width="288"/></div><div><img alt="CHINT" data-picture="image_10" height="128" loading="lazy" src="uploads/6ad00463ab06b1ed1ac498efeaaec1d6.jpg" width="288"/></div><div><img alt="DELIXI" data-picture="image_11" height="128" loading="lazy" src="uploads/1f9291e4fadf6bb94fe5278cdd40e94b.jpg" width="288"/></div><div><img alt="SIEMENS" data-picture="image_12" height="128" loading="lazy" src="uploads/4a38b1b6a1934c289bef5c4d93ee1db2.jpg" width="288"/></div><div><img alt="OMRON" data-picture="image_13" height="128" loading="lazy" src="uploads/28874a498a6ded7714b42011452965de.jpg" width="288"/></div><div><img alt="Schneider Electric" data-picture="image_14" height="128" loading="lazy" src="uploads/b4141f11bc4b25e029d73fb81b7aa416.jpg" width="288"/></div></div></div></div></section><section id="inquiry"><div class="ab-wrap ab-contact"><div><h2 data-edit="text_51">让合作，从一次沟通开始</h2><p data-edit="text_52">了解设备、交流项目，联系固威环保。</p></div><div class="ab-contact-links"><a class="ab-phone" href="tel:18026396076">18026396076</a><a class="button" href="contact.html">联系我们 <span aria-hidden="true">↗</span></a></div></div></section></main><footer><div class="wrap"><div class="footer_bottom"><div class="footer_identity"><a aria-label="固威环保，返回首页" class="footer_logo" href="index.html"><img alt="固威环保 Logo" height="460" loading="lazy" src="uploads/a35a173900bf2d6f38e7bf679958a07f.jpg" width="640"/></a><p>广州市固威环保科技开发有限公司<br/>广州市增城区中新镇福和三迳村福中路76号</p></div><p><br/><a href="contact.html#privacy">信息使用说明</a></p></div></div></footer></body></html>
+只精滤每一滴</h1><p data-edit="text_1">专注水处理设备研发与制造，提供一站式水务综合解决方案。</p><div class="ab-hero-tags"><span>高效</span><span>节能</span><span>环保</span></div></div><div class="ab-hero-photo"><img alt="地球与清澈水花" data-picture="image_0" decoding="async" fetchpriority="high" height="1706" src="assets/about-globe-water-20261128.webp" width="1800"/></div></div></section><nav aria-label="关于固威内容导航" class="ab-nav"><div class="ab-wrap"><a href="#company-profile">企业简介</a><a href="#company-culture">企业文化</a><a href="#company-environment">公司与制造</a><a href="#company-credentials">荣誉专利</a><a href="#company-clients">客户交流</a><a href="#company-strengths">企业优势</a></div></nav><section class="ab-section" id="company-profile"><div class="ab-wrap"><div class="ab-profile-grid"><div><span class="ab-overline">企业简介</span><h2 data-edit="text_2">专注水处理研发与制造</h2><div class="ab-year"><strong>2015</strong><span>公司成立<br/>中国 · 广州增城</span></div></div><div class="ab-intro"><p data-edit="text_3">广州市固威环保科技开发有限公司成立于2015年，坐落于广州市增城区中新镇福中路76号。公司专注于水处理设备、智慧水务管控平台及海水淡化设备的研发与生产，为市政、工业、畜牧业、医疗及民用水处理提供解决方案。</p><p data-edit="text_4">同时，固威开展工业系统规划设计与成套电气柜生产，提供电气规划、机电施工安装、设备运行调试及运营售后服务，服务环保、电子、化工、制造、新能源及自动化等领域。</p></div></div><ol class="ab-service-chain"><li><span>01</span><h3 data-edit="text_5">全过程咨询</h3><p data-edit="text_6">从需求与现场条件出发</p></li><li><span>02</span><h3 data-edit="text_7">研发设计</h3><p data-edit="text_8">衔接处理工艺与系统配置</p></li><li><span>03</span><h3 data-edit="text_9">生产制造</h3><p data-edit="text_10">水处理设备与成套电气柜</p></li><li><span>04</span><h3 data-edit="text_11">运维服务</h3><p data-edit="text_12">安装调试、运行与售后</p></li></ol></div></section><section class="ab-section ab-culture" id="company-culture"><div class="ab-wrap"><div class="ab-heading"><div><span class="ab-overline">企业文化理念</span><h2 data-edit="text_13">专业 · 专注 · 专一</h2></div><p data-edit="text_14">专注做好水处理设备，以产品与服务为客户创造价值。</p></div><div class="ab-values"><article><h3 data-edit="text_15">宗旨</h3><p data-edit="text_16">质量为本、诚信为先、创新为魂。</p></article><article><h3 data-edit="text_17">使命</h3><p data-edit="text_18">为客户创造价值，为员工创造机会，为社会创造财富。</p></article><article><h3 data-edit="text_19">理念</h3><p data-edit="text_20">不断更新技术，为客户提供更好的产品。</p></article><article><h3 data-edit="text_21">愿景</h3><p data-edit="text_22">成为国内水处理设备行业的一流品牌。</p></article></div></div></section><section class="ab-section" id="company-environment"><div class="ab-wrap"><div class="ab-heading"><div><h2 data-edit="text_23">公司环境与制造</h2></div></div><div class="ab-environment"><figure class="ab-photo has_photo"><a aria-label="放大查看：玻璃钢罐体缠绕制造" data-image-link="true" href="uploads/95cee1fa4bf7abf5c59e8fdaafbe0096.jpg"><img alt="玻璃钢罐体缠绕制造" data-picture="image_1" decoding="async" height="900" loading="lazy" src="uploads/95cee1fa4bf7abf5c59e8fdaafbe0096.jpg" width="1200"/></a><figcaption data-edit="text_25">玻璃钢罐体缠绕制造</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：公司接待区域" data-image-link="true" href="uploads/bb8a9ee4e12076210cd5aeb87ef73336.jpg"><img alt="公司接待区域" data-picture="image_2" decoding="async" height="900" loading="lazy" src="uploads/bb8a9ee4e12076210cd5aeb87ef73336.jpg" width="1200"/></a><figcaption data-edit="text_26">公司接待区域</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：公司外观" data-image-link="true" href="uploads/6157b13538fe820c6470b6d7bea7e680.jpg"><img alt="公司外观" data-picture="image_3" decoding="async" loading="lazy" src="uploads/6157b13538fe820c6470b6d7bea7e680.jpg"/></a><figcaption data-edit="text_27">公司外观</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：会议与交流空间" data-image-link="true" href="uploads/3c12795ee7e1b51f4bb6c83d3e61d2d6.jpg"><img alt="会议与交流空间" data-picture="image_4" decoding="async" loading="lazy" src="uploads/3c12795ee7e1b51f4bb6c83d3e61d2d6.jpg"/></a><figcaption data-edit="text_28">会议与交流空间</figcaption></figure></div></div></section><section class="ab-section ab-wash" id="company-credentials"><div class="ab-wrap ab-credentials"><a aria-label="放大查看荣誉与专利证书" class="ab-certificate" data-image-link="true" href="uploads/d07cb10e6d87df64e612a2c4b3a934ca.jpg"><img alt="固威环保荣誉与专利证书" data-picture="image_5" height="1029" loading="lazy" src="uploads/d07cb10e6d87df64e612a2c4b3a934ca.jpg" width="1594"/></a></div></section><section class="ab-section" id="company-clients"><div class="ab-wrap"><div class="ab-heading"><div><h2 data-edit="text_31">客户来访与交流</h2></div></div><div class="ab-client-grid"><figure class="ab-photo has_photo"><a aria-label="放大查看：客户来访与业务交流" data-image-link="true" href="uploads/ea1e664cc150d2f5367561d5f870a291.jpg"><img alt="客户来访与业务交流" data-picture="image_6" decoding="async" loading="lazy" src="uploads/ea1e664cc150d2f5367561d5f870a291.jpg"/></a><figcaption data-edit="text_33">客户来访与业务交流</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：行业交流" data-image-link="true" href="uploads/f04ec3159a88e01f71a4b6f395b3650e.jpg"><img alt="行业交流" data-picture="image_7" decoding="async" loading="lazy" src="uploads/f04ec3159a88e01f71a4b6f395b3650e.jpg"/></a><figcaption data-edit="text_34">行业交流</figcaption></figure><figure class="ab-photo has_photo"><a aria-label="放大查看：合作交流" data-image-link="true" href="uploads/493397c4454e9adbaaa25a3903a8d3b2.jpg"><img alt="合作交流" data-picture="image_8" decoding="async" loading="lazy" src="uploads/493397c4454e9adbaaa25a3903a8d3b2.jpg"/></a><figcaption data-edit="text_35">合作交流</figcaption></figure></div></div></section><section class="ab-section ab-wash" id="company-strengths"><div class="ab-wrap"><div class="ab-heading"><div><h2 data-edit="text_36">企业优势</h2></div></div><div class="ab-advantages"><article><div class="ab-adv-title"><span>01</span><h3 data-edit="text_38">源头厂家</h3></div><p data-edit="text_39">开展水处理设备研发与生产，衔接设计、制造与交付。</p></article><article><div class="ab-adv-title"><span>02</span><h3 data-edit="text_40">智能控制</h3></div><p data-edit="text_41">提供成套电气柜、PLC与触摸屏程序及自动化控制系统。</p></article><article><div class="ab-adv-title"><span>03</span><h3 data-edit="text_42">非标定制</h3></div><p data-edit="text_43">结合现场条件、处理需求与设备接口，组织方案配置。</p></article><article><div class="ab-adv-title"><span>04</span><h3 data-edit="text_44">安全可靠</h3></div><p data-edit="text_45">围绕安全保护、运行稳定与操作便利开展系统设计。</p></article><article><div class="ab-adv-title"><span>05</span><h3 data-edit="text_46">节能降耗</h3></div><p data-edit="text_47">将设备选型与控制配置结合，关注系统运行能耗。</p></article><article><div class="ab-adv-title"><span>06</span><h3 data-edit="text_48">售后保障</h3></div><p data-edit="text_49">提供安装调试、运行维护与技术支持，衔接设备全流程服务。</p></article></div><div class="ab-suppliers"><p data-edit="text_50">与国内外元器件厂家长期合作</p><div class="ab-logos"><div><img alt="ABB" data-picture="image_9" height="128" loading="lazy" src="uploads/7fa844ff88108ce7045a326c83b98795.jpg" width="288"/></div><div><img alt="CHINT" data-picture="image_10" height="128" loading="lazy" src="uploads/6ad00463ab06b1ed1ac498efeaaec1d6.jpg" width="288"/></div><div><img alt="DELIXI" data-picture="image_11" height="128" loading="lazy" src="uploads/1f9291e4fadf6bb94fe5278cdd40e94b.jpg" width="288"/></div><div><img alt="SIEMENS" data-picture="image_12" height="128" loading="lazy" src="uploads/4a38b1b6a1934c289bef5c4d93ee1db2.jpg" width="288"/></div><div><img alt="OMRON" data-picture="image_13" height="128" loading="lazy" src="uploads/28874a498a6ded7714b42011452965de.jpg" width="288"/></div><div><img alt="Schneider Electric" data-picture="image_14" height="128" loading="lazy" src="uploads/b4141f11bc4b25e029d73fb81b7aa416.jpg" width="288"/></div></div></div></div></section><section id="inquiry"><div class="ab-wrap ab-contact"><div><h2 data-edit="text_51">让合作，从一次沟通开始</h2></div><div class="ab-contact-links"><a class="ab-phone" href="tel:18026396076">180 2639 6076</a><a class="button" href="contact.html">联系我们 <span aria-hidden="true">↗</span></a></div></div></section></main><footer><div class="wrap"><div class="footer_bottom"><div class="footer_identity"><a aria-label="固威环保，返回首页" class="footer_logo" href="index.html"><img alt="固威环保 Logo" height="460" loading="lazy" src="uploads/a35a173900bf2d6f38e7bf679958a07f.jpg" width="640"/></a><p>广州市固威环保科技开发有限公司<br/>广州市增城区中新镇福和三迳村福中路76号</p></div><p><br/><a href="contact.html#privacy">信息使用说明</a></p></div></div></footer><script id="about-polish-script">(() => {
+  function init() {
+    if (!document.body.classList.contains('about-page')) return;
+    const nav = document.querySelector('.ab-nav');
+    const rail = nav.querySelector('.ab-wrap');
+    const links = [...rail.querySelectorAll('a[href^="#"]')];
+    const sections = links.map(a => document.getElementById(a.hash.slice(1)));
+    const header = document.querySelector('body > header');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    let current = -1, queued = false;
+    function edges() {
+      nav.classList.toggle('has-before', rail.scrollLeft > 2);
+      nav.classList.toggle('has-after', rail.scrollLeft + rail.clientWidth < rail.scrollWidth - 2);
+    }
+    function update() {
+      queued = false;
+      if (document.body.style.position === 'fixed' || document.querySelector('dialog[open]')) return;
+      const boundary = header.getBoundingClientRect().height + nav.offsetHeight + 20;
+      let next = 0;
+      sections.forEach((section, i) => { if (section && section.getBoundingClientRect().top <= boundary) next = i; });
+      if (next !== current) {
+        current = next;
+        links.forEach((a, i) => i === next ? a.setAttribute('aria-current', 'location') : a.removeAttribute('aria-current'));
+        const r = rail.getBoundingClientRect(), a = links[next].getBoundingClientRect();
+        if (a.left < r.left + 10 || a.right > r.right - 10) {
+          rail.scrollTo({left: rail.scrollLeft + (a.left + a.right - r.left - r.right) / 2, behavior: reduced.matches ? 'auto' : 'smooth'});
+        }
+      }
+      edges();
+    }
+    function schedule() { if (!queued) { queued = true; requestAnimationFrame(update); } }
+    addEventListener('scroll', schedule, {passive:true});
+    addEventListener('resize', schedule);
+    addEventListener('hashchange', schedule);
+    addEventListener('load', schedule);
+    rail.addEventListener('scroll', edges, {passive:true});
+    if (window.ResizeObserver) new ResizeObserver(schedule).observe(nav);
+    update();
+
+    // A dedicated zoomable view keeps the certificate overview readable on phones.
+    const anchor = document.querySelector('.ab-certificate');
+    if (!anchor || !window.HTMLDialogElement || !HTMLDialogElement.prototype.showModal) return;
+    const en = document.documentElement.lang.startsWith('en');
+    const dialog = document.createElement('dialog');
+    dialog.className = 'ab-cert-dialog';
+    dialog.setAttribute('aria-labelledby','ab-cert-title');
+    const toolbar = document.createElement('div'); toolbar.className = 'ab-cert-toolbar';
+    const title = document.createElement('strong'); title.id = 'ab-cert-title'; title.textContent = en ? 'Certificates' : '荣誉与专利'; toolbar.append(title);
+    function button(text, label) { const b = document.createElement('button'); b.type='button'; b.textContent=text; b.setAttribute('aria-label',label); toolbar.append(b); return b; }
+    const minus = button('−',en?'Zoom out':'缩小');
+    const fit = button(en?'Fit':'适合',en?'Fit image to screen':'恢复适合屏幕');
+    const plus = button('+',en?'Zoom in':'放大');
+    const close = button('×',en?'Close certificates':'关闭证书预览');
+    const stage = document.createElement('div'); stage.className='ab-cert-stage'; stage.tabIndex=0; stage.setAttribute('aria-label',en?'Certificate image, scroll to view details':'证书图片，可滚动查看细节');
+    const sheet = document.createElement('div'); sheet.className='ab-cert-sheet';
+    const img = document.createElement('img'); img.alt=anchor.querySelector('img').alt; img.draggable=false; sheet.append(img); stage.append(sheet);
+    const help = document.createElement('p'); help.className='ab-cert-help'; help.setAttribute('aria-live','polite');
+    dialog.append(toolbar,stage,help); document.body.append(dialog);
+    let zoom=1, overflow='';
+    function size() {
+      const padding = parseFloat(getComputedStyle(stage).paddingLeft)*2;
+      const base = Math.min(stage.clientWidth-padding, (stage.clientHeight-padding)*1594/919, 1594);
+      sheet.style.width = Math.max(1,base*zoom)+'px';
+      minus.disabled=zoom===1; plus.disabled=zoom===6;
+      help.textContent=en ? `${zoom}× · Use + to enlarge, then scroll to view details` : `${zoom}× · 点击 + 放大后，可左右、上下滑动查看`;
+    }
+    minus.onclick=()=>{zoom=Math.max(1,zoom-1);size();};
+    plus.onclick=()=>{zoom=Math.min(6,zoom+1);size();};
+    fit.onclick=()=>{zoom=1;size();stage.scrollTo(0,0);};
+    close.onclick=()=>dialog.close();
+    img.onerror=()=>{help.textContent=en?'Image could not load. Close and try again.':'图片暂时未能加载，请关闭后重试。';};
+    dialog.addEventListener('close',()=>{document.body.style.overflow=overflow;anchor.focus({preventScroll:true});schedule();});
+    dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
+    anchor.addEventListener('click',e=>{
+      if(e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)return;
+      e.preventDefault();e.stopPropagation();
+      zoom=1;overflow=document.body.style.overflow;document.body.style.overflow='hidden';
+      img.src=anchor.href;dialog.showModal();size();stage.scrollTo(0,0);close.focus();
+    });
+    if(window.ResizeObserver)new ResizeObserver(()=>{if(dialog.open)size();}).observe(stage);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true}); else init();
+})();
+</script></body></html>
